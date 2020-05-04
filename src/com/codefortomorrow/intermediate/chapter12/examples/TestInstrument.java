@@ -1,4 +1,4 @@
-package com.codefortomorrow.examples.intermediate;
+package com.codefortomorrow.intermediate.chapter12.examples;
 
 public class TestInstrument {
     public static void main(String[] args) {

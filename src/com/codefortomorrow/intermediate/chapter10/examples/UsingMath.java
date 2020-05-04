@@ -1,4 +1,4 @@
-package com.codefortomorrow.examples.intermediate;
+package com.codefortomorrow.intermediate.chapter10.examples;
 
 public class UsingMath {
     public static void main(String[] args) {
