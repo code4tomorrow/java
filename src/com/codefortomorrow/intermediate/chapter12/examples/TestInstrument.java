@@ -28,14 +28,6 @@ class Instrument {
         System.out.println("Playing instrument");
     }
 
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
     @Override
     public String toString() {
         return "Instrument, name: " + name;
@@ -55,22 +47,6 @@ class Guitar extends Instrument {
     public Guitar(String type, String stringType) {
         super("guitar");
         this.type = type;
-        this.stringType = stringType;
-    }
-
-    public String getType() {
-        return type;
-    }
-
-    public void setType(String type) {
-        this.type = type;
-    }
-
-    public String getStringType() {
-        return stringType;
-    }
-
-    public void setStringType(String stringType) {
         this.stringType = stringType;
     }
 
