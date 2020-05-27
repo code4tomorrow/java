@@ -1,0 +1,14 @@
+                Circle
+---------------------------------------
+- radius: double
+- color: String
+---------------------------------------
++ Circle()
++ Circle(radius: double, color: String)
++ getRadius(): double
++ setRadius(radius: double): void
++ getColor(): String
++ setColor(color: String): void
++ getArea(): double
++ getCircumference(): double
+- getDiameter(): double

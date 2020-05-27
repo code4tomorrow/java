@@ -1,0 +1,10 @@
+                       Account
+------------------------------------------------------
+- name: String
+- number: long
+- balance: double
+------------------------------------------------------
++ Account()
++ Account(name: String, number: long, balance: double)
++ deposit(amount: double): void
++ withdraw(amount: double): boolean

@@ -8,10 +8,6 @@ public class TestPoint {
         System.out.println("Point 1: " + pt1); // prints "Point 1: (5, 0)"
         System.out.println("Point 2: " + pt2); // prints "Point 2: (1.4, -15)"
 
-        Point pt3 = new Point(5, 0);
-        System.out.println(pt1 == pt3); // false
-        System.out.println(pt1.equals(pt3)); // true
-
         // the following prints the same distance, demonstrating
         // overloading the getDistance() method
         System.out.println(pt1.getDistance(pt2));
