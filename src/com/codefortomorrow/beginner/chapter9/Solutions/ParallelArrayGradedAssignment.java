@@ -1,8 +1,8 @@
-package parallelArrayGradedAssignmentAMunshi;
+package com.codefortomorrow;
 
 import java.util.Scanner;
 
-public class ParallelArrayGradedAssignmentAMunshi 
+public class ParallelArrayGradedAssignment
 {
 
 	public static void main(String[] args) 
