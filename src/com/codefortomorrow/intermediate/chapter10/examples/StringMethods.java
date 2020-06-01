@@ -97,7 +97,7 @@ public class StringMethods {
 		System.out.println("-------------- toUpperCase --------------");
 		System.out.println(str[2].toUpperCase());
 
-		// trim() jkhkj
+		// trim()
 		System.out.println("-------------- trim --------------");
 		System.out.println("Original string: " + str[6]);
 		System.out.println("Updated string: " + str[6].trim());
