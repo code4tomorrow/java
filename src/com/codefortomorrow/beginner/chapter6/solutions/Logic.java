@@ -1,4 +1,4 @@
-package com.codefortomorrow.beginner.chapter5.solutions;
+package com.codefortomorrow.beginner.chapter6.solutions;
 
 /*
  * Given the code below, predict what the output

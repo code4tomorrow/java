@@ -19,14 +19,14 @@ In each difficulty level package, source code is further divided by chapter:
 2. `chapter2` Output
 3. `chapter3` Data
 4. `chapter4` Operators
-5. `chapter5` Conditionals
-6. `chapter6` Scanner
-7. `chapter7` Switch
+5. `chapter5` Scanner
+6. `chapter6` Conditionals
+7. `chapter7` Other Selection Structures
 8. `chapter8` Loops
 9. `chapter9` Arrays
 
 ### Intermediate
-10. `chapter10` ArrayLists, Nested Loops, Math, & String
+10. `chapter10` Nested Loops, Math, & String
 11. `chapter11` Methods
 12. `chapter12` Classes & Inheritance
 
