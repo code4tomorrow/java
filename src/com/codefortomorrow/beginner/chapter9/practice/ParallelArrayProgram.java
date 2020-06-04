@@ -1,8 +1,8 @@
-package parallelArrayProgramAMunshi;
+package com.codefortomorrow;
 
 import java.util.Scanner;
 
-public class ParallelArrayProgramAMunshi 
+public class ParallelArrayProgram 
 {
 
 	public static void main (String[]args) 

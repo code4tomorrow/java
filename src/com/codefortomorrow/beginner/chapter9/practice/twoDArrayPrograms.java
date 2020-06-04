@@ -1,6 +1,6 @@
-package twoDArrayProgramsAMunshi;
+package com.codefortomorrow;
 
-public class twoDArrayProgramsAMunshi {
+public class twoDArrayPrograms{
 
 	public static void main(String[] args) {
 
