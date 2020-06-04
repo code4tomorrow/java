@@ -1,11 +1,11 @@
-package com.codefortomorrow;
+package com.codefortomorrow.beginner.chapter9.solutions;
 
 public class twoDArrayPrograms {
 
 	public static void main(String[] args) {
 
 		// 1
-		int a[][] = new int[4][6];
+		int[][] a = new int[4][6];
 		int sum = 0;
 		int max = Integer.MIN_VALUE;
 		int min = Integer.MAX_VALUE;
@@ -31,7 +31,7 @@ public class twoDArrayPrograms {
 		System.out.println();
 
 		// 2
-		String b[][] = new String[3][3];
+		String[][] b = new String[3][3];
 		String str = "*";
 		int ast = 0;
 		for (int x = 0; x < 3; x++) 
@@ -51,7 +51,7 @@ public class twoDArrayPrograms {
 		System.out.println();
 
 		// 3
-		int c[][] = new int[5][4];
+		int[][] c = new int[5][4];
 		for (int power = 2; power < 7; power++) 
 		{
 			for (int base = 2; base < 6; base++) 
@@ -72,7 +72,7 @@ public class twoDArrayPrograms {
 		System.out.println();
 		
 		//1
-		int quiz[][] = new int [3][4];
+		int[][] quiz = new int [3][4];
 		for (int row = 0; row < quiz.length; row++) 
 		{
 			for (int col = 0; col < quiz[row].length; col++) 

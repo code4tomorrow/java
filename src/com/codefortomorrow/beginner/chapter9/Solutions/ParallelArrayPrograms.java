@@ -1,4 +1,4 @@
-package parallelArrayPrograms;
+package com.codefortomorrow.beginner.chapter9.solutions;
 
 import java.util.Scanner;
 public class ParallelArrayPrograms 
@@ -6,10 +6,10 @@ public class ParallelArrayPrograms
 	public static void main(String[]args)
 	{
 		//1
-		int num[][] = new int [1][5];
-		String street[][] = new String [1][5];
-		String apt[][] = new String [1][5];
-		int zip[][] = new int [1][5];
+		int[][] num = new int [1][5];
+		String[][] street = new String [1][5];
+		String[][] apt = new String [1][5];
+		int[][] zip = new int [1][5];
 		initintArray(num, "number");
 		initstrArray(street, "street");
 		initstrArray(apt, "apartment");
@@ -24,12 +24,12 @@ public class ParallelArrayPrograms
 		}
 		
 		//2
-		String fn[][] = new String [1][6];
-		String li[][] = new String [1][6];
-		int id[][] = new int [1][6];
-		int pe[][] = new int [1][6];
-		int pp[][] = new int [1][6];
-		double g[][] = new double [1][6];
+		String[][] fn = new String [1][6];
+		String[][] li = new String [1][6];
+		int[][] id = new int [1][6];
+		int[][] pe = new int [1][6];
+		int[][] pp = new int [1][6];
+		double[][] g = new double [1][6];
 		initstrArray(fn, "first name");
 		initstrArray(li, "last initial");
 		initintArray(id, "student ID");
