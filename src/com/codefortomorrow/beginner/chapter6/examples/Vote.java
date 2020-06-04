@@ -4,10 +4,12 @@ import java.util.Scanner;
 
 public class Vote {
 	public static void main(String[] args) {
+		// prompt user to enter their age
 		Scanner input = new Scanner(System.in);
 		System.out.print("Enter your age: ");
 		int age = input.nextInt();
 
+		// you can vote if you're 18+
 		boolean canVote = age >= 18;
 
 		// if statement
