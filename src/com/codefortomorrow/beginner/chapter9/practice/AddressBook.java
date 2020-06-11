@@ -1,28 +1,37 @@
 package com.codefortomorrow.beginner.chapter9.practice;
 
 /*
-Store the address information (Number, Street, Apt, and Zip Code)
-for five individuals.   If there is no apartment, the user may enter –
-and this shouldn’t be included in the printout.  Use the data below.
-
-            	23 Chamberlain Ave 08852
-            	451 Avenue Q Apt B 10101
-            	1 K St Apt P 23456
-            	1111 Pitt Ave 19146
-            	1313 Elm St Apt Z 08628
-
-If you want to try a char array, you will need the Scanner command which is something like:
-char c = scan.next().charAt(0);
-
-Allow a user to enter the information for an assignment completed by 6 students,
-including first name, last initial, student ID number, points earned, and points possible.
-Then display the information on 6 lines and include the grade as a percent on the assignment.
-
-Alexandria 	R	009988602	50	50	100%
-*/
+ * Create a program called AddressBook
+ * which prompts the user to enter
+ * 5 addresses.
+ *
+ * The program should prompt the user
+ * for the house number (int), street (String),
+ * apartment (char), and zip code (int).
+ *
+ * Note that there is no nextChar() method
+ * in the Scanner class, so you will need to do
+ * something like this:
+ * Scanner input = new Scanner(System.in);
+ * char apt = input.nextLine().charAt(0);
+ *
+ * It should then print each of the addresses. If
+ * the user entered '-' for the apartment, the apartment
+ * should not be printed (see sample output).
+ *
+ * The zip codes should always be printed so that
+ * they are 5 digits long. (You may need to use
+ * String formatting so that if the zip code
+ * is not 5 digits, it will fill in 0s to the left
+ * of the number until the entire zip code is 5 digits
+ * long. You can read about that here:
+ * https://stackoverflow.com/questions/473282/how-can-i-pad-an-integer-with-zeros-on-the-left)
+ *
+ * Sample output: https://youtu.be/ms2tM-llTwo
+ */
 
 public class AddressBook {
-	public static void main(String[]args) {
+	public static void main(String[] args) {
 		// write code here
 	}
 }
