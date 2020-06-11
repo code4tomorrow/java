@@ -24,7 +24,7 @@ The Big Bang Theory	12	281	67	236	7.9	2007	2019
 How I Met Your Mother	9	208	25	90	8.2	2005	2014
 */
 
-public class ParallelArrayProgram {
+public class TelevisionStats {
 	public static void main (String[]args) {
 		// write code here
 	}

@@ -1,7 +1,7 @@
 package com.codefortomorrow.beginner.chapter9.solutions;
 
 import java.util.Scanner;
-public class ParallelArrayPrograms 
+public class AddressBook
 {
 	public static void main(String[]args)
 	{

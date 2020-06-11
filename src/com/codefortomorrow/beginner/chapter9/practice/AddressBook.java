@@ -21,7 +21,7 @@ Then display the information on 6 lines and include the grade as a percent on th
 Alexandria 	R	009988602	50	50	100%
 */
 
-public class ParallelArrayPrograms {
+public class AddressBook {
 	public static void main(String[]args) {
 		// write code here
 	}

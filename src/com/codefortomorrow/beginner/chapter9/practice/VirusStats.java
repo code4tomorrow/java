@@ -19,7 +19,7 @@ You are able to use any notes or previous programs
 to help aid you in creating this assignment.
 */
 
-public class ParallelArrayGradedAssignment {
+public class VirusStats {
 	public static void main(String[] args) {
 		// write code here
 	}

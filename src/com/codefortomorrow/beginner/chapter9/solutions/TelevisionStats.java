@@ -2,7 +2,7 @@ package com.codefortomorrow.beginner.chapter9.solutions;
 
 import java.util.Scanner;
 
-public class ParallelArrayProgram
+public class TelevisionStats
 {
 
 	public static void main (String[]args) 
