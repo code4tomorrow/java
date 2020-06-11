@@ -1,8 +1,8 @@
 package com.codefortomorrow.intermediate.chapter12.solutions;
 
 /*
-Create the Piano class such that
-when you call the playTriad() method,
+Create the Piano class (which inherits the Instrument class)
+such that when you call the playTriad() method,
 it calls the play() method from the
 Instrument class 3 times.
 
