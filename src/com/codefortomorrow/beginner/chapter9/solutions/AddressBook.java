@@ -26,6 +26,10 @@ package com.codefortomorrow.beginner.chapter9.solutions;
  * https://stackoverflow.com/questions/473282/how-can-i-pad-an-integer-with-zeros-on-the-left)
  *
  * Sample output: https://youtu.be/ms2tM-llTwo
+ *
+ * Hint: You may encounter a problem when using Scanner.
+ * Read the following article for a solution:
+ * https://www.geeksforgeeks.org/why-is-scanner-skipping-nextline-after-use-of-other-next-functions/
  */
 
 import java.util.Scanner;
