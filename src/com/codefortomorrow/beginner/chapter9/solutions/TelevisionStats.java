@@ -12,9 +12,9 @@ package com.codefortomorrow.beginner.chapter9.solutions;
  * rating, start year, and end year.
  *
  * The data you need can be found here:
+ * https://docs.google.com/spreadsheets/d/15A5AdwYm45FZvHizYGYuJXdQJwnKlildm6y8vp4P-jI/edit?usp=sharing
  *
- *
- * Sample output:
+ * Sample output: https://youtu.be/auKR4KX74q8
  */
 
 import java.util.Scanner;
@@ -138,10 +138,10 @@ public class TelevisionStats {
 							System.out.println(shows[index] + " has a rating of " + rating[index]);
 							break;
 						case "start year":
-							System.out.println(shows[index] + " started airing in " + start[index] + " seasons.");
+							System.out.println(shows[index] + " started airing in " + start[index] + ".");
 							break;
 						case "end year":
-							System.out.println(shows[index] + " last aired in " + end[index] + " seasons.");
+							System.out.println(shows[index] + " last aired in " + end[index] + ".");
 							break;
 						case "quit":
 							System.out.println("Quitting...");
