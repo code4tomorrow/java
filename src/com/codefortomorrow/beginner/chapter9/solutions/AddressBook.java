@@ -1,69 +1,86 @@
 package com.codefortomorrow.beginner.chapter9.solutions;
 
+/*
+ * Create a program called AddressBook
+ * which prompts the user to enter
+ * 5 addresses. The program should prompt the user
+ * for the house number (int), street (String),
+ * apartment (char), and zip code (int).
+ *
+ * Note that there is no nextChar() method
+ * in the Scanner class, so you will need to do
+ * something like this:
+ * Scanner input = new Scanner(System.in);
+ * char apt = input.nextLine().charAt(0);
+ *
+ * It should then print each of the addresses. If
+ * the user entered '-' for the apartment, the apartment
+ * should not be printed (see sample output).
+ *
+ * The zip codes should always be printed so that
+ * they are 5 digits long. (You may need to use
+ * String formatting so that if the zip code
+ * is not 5 digits, it will fill in 0s to the left
+ * of the number until the entire zip code is 5 digits
+ * long. You can read about that here:
+ * https://stackoverflow.com/questions/473282/how-can-i-pad-an-integer-with-zeros-on-the-left)
+ *
+ * Sample output: https://youtu.be/ms2tM-llTwo
+ *
+ * Hint: You may encounter a problem when using Scanner.
+ * Read the following article for a solution:
+ * https://www.geeksforgeeks.org/why-is-scanner-skipping-nextline-after-use-of-other-next-functions/
+ */
+
 import java.util.Scanner;
-public class AddressBook
-{
-	public static void main(String[]args)
-	{
-		//1
-		int[][] num = new int [1][5];
-		String[][] street = new String [1][5];
-		String[][] apt = new String [1][5];
-		int[][] zip = new int [1][5];
-		initintArray(num, "number");
-		initstrArray(street, "street");
-		initstrArray(apt, "apartment");
-		initintArray(zip, "zipcode");
-		System.out.println();
-		for (int c = 0; c < num[0].length; c++)
-		{
-			if (apt[0][c].equals("-"))
-				System.out.println(num[0][c] + " " + street[0][c] + " " + zip[0][c]);
-			else
-				System.out.println(num[0][c] + " " + street[0][c] + " Apt " + apt[0][c] + " " + zip[0][c]);
+
+public class AddressBook {
+	public static void main(String[] args) {
+		final int NUMBER_OF_ADDRESSES = 5;
+
+		// arrays store the address info
+		int[] number = new int[NUMBER_OF_ADDRESSES];
+		String[] street = new String[NUMBER_OF_ADDRESSES];
+		char[] apartment = new char[NUMBER_OF_ADDRESSES];
+		int[] zipCode = new int[NUMBER_OF_ADDRESSES];
+
+		Scanner input = new Scanner(System.in);
+
+		// prompt user for each address and store it
+		for (int i = 0; i < NUMBER_OF_ADDRESSES; i++) {
+			System.out.println("Address #" + (i + 1));
+
+			System.out.print("Enter the house number: ");
+			number[i] = input.nextInt();
+
+			input.nextLine(); // move cursor to next line
+
+			System.out.print("Enter the street: ");
+			street[i] = input.nextLine();
+
+			System.out.print("Enter the apartment, or '-' if apartment is not applicable: ");
+			apartment[i] = input.nextLine().charAt(0);
+
+			System.out.print("Enter the zip code: ");
+			zipCode[i] = input.nextInt();
+
+			System.out.println();
 		}
-		
-		//2
-		String[][] fn = new String [1][6];
-		String[][] li = new String [1][6];
-		int[][] id = new int [1][6];
-		int[][] pe = new int [1][6];
-		int[][] pp = new int [1][6];
-		double[][] g = new double [1][6];
-		initstrArray(fn, "first name");
-		initstrArray(li, "last initial");
-		initintArray(id, "student ID");
-		initintArray(pe, "points earned");
-		initintArray(pp, "points possible");
-		for (int c = 0; c < g[0].length; c++)
-		{
-			g[0][c] = (pe[0][c])/((double)(pp[0][c])) * 100;
+
+		System.out.println("Address Book\n");
+
+		// print out each address
+		for (int i = 0; i < NUMBER_OF_ADDRESSES; i++) {
+			System.out.print(number[i] + " " + street[i] + " ");
+
+			// if apartment is '-', don't print the apartment
+			if (apartment[i] != '-') {
+				System.out.print("Apt " + apartment[i] + " ");
+			}
+
+			// pad zeroes to the left so that zip codes are
+			// 5 digits long
+			System.out.printf("%05d\n", zipCode[i]);
 		}
-		System.out.println();
-		for (int c = 0; c < fn[0].length; c++)
-		{
-			System.out.println(fn[0][c] + " " + li[0][c] + " " + id[0][c] + " " + pe[0][c] + " " + pp[0][c] + " " + (int)g[0][c] + "%");
-		}
-		
-	}
-	public static void initintArray (int[][] n, String message)
-	{
-		Scanner reader = new Scanner(System.in);
-		for (int x = 0; x < n[0].length; x++)
-		{
-			System.out.print("Please enter a " + message + " " + (x+1) + ": ");
-			n[0][x] = reader.nextInt();
-		}
-		
-	}
-	public static void initstrArray (String[][] n, String message)
-	{
-		Scanner reader = new Scanner(System.in);
-		for (int x = 0; x < n[0].length; x++)
-		{
-			System.out.print("Please enter a " + message + " " + (x+1) + ": ");
-			n[0][x] = reader.nextLine();
-		}
-		
 	}
 }
