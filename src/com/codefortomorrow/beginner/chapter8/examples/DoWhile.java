@@ -18,6 +18,8 @@ public class DoWhile {
 			guess = input.nextInt();
 		} while (guess != SECRET_NUMBER && guess != -1);
 
+		input.close();
+
 		if (guess == SECRET_NUMBER) { // user guessed correctly
 			System.out.println("Good job, you guessed right!");
 		} else { // user quit

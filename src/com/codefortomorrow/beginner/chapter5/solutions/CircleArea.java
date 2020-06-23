@@ -21,5 +21,7 @@ public class CircleArea {
 		// calculate and display the circle's area
 		double area = Math.PI * radius * radius;
 		System.out.println("Area of the circle is: " + area);
+
+		input.close();
 	}
 }

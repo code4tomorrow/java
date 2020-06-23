@@ -15,6 +15,7 @@ public class Default {
 		Scanner input = new Scanner(System.in);
 		System.out.print("Which greeting do you want? ");
 		int choice = input.nextInt();
+		input.close();
 
 		// print the correct greeting, or an error message
 		// if the choice was invalid

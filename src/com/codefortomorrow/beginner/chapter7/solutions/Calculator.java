@@ -29,6 +29,7 @@ public class Calculator {
 		System.out.print("Enter an operator above: ");
 		// assume operator is first character in the line
 		char operator = input.nextLine().charAt(0);
+		input.close();
 
 		boolean isOperatorValid =
 				operator == '+' ||

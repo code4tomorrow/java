@@ -14,6 +14,8 @@ import java.util.Scanner;
 
 public class PickYourPath {
 	public static void main(String[] args) {
+		final String PROMPT = "Enter 1, 2, or another number to quit: ";
+
 		System.out.println("Welcome to Pick Your Path!");
 
 		System.out.println("You are a master chef cooking in your restaurant\n" +
@@ -22,7 +24,7 @@ public class PickYourPath {
 		System.out.println("\t(2) Call 911 and let the firefighters handle it");
 
 		Scanner input = new Scanner(System.in);
-		System.out.print("Enter 1, 2, or another number to quit: ");
+		System.out.print(PROMPT);
 		int choice = input.nextInt();
 
 		if (choice == 1) {
@@ -42,7 +44,7 @@ public class PickYourPath {
 					"\tassure the customers that their food is coming");
 			System.out.println("\t(2) Stay in the kitchen and work faster");
 
-			System.out.print("Enter 1, 2, or another number to quit: ");
+			System.out.print(PROMPT);
 			choice = input.nextInt();
 
 			if (choice == 1) {
@@ -53,7 +55,7 @@ public class PickYourPath {
 				System.out.println("\t(1) Invest in a new oven");
 				System.out.println("\t(2) Book a vacation to Tahiti");
 
-				System.out.print("Enter 1, 2, or another number to quit: ");
+				System.out.print(PROMPT);
 				choice = input.nextInt();
 
 				if (choice == 1) {
@@ -77,5 +79,7 @@ public class PickYourPath {
 		} else {
 			System.out.println("Game over. Thanks for playing!");
 		}
+
+		input.close();
 	}
 }

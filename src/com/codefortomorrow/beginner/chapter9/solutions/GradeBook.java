@@ -61,6 +61,8 @@ public class GradeBook {
 			System.out.println();
 		}
 
+		input.close();
+
 		// display grade book
 		System.out.print("Grade Book\n");
 

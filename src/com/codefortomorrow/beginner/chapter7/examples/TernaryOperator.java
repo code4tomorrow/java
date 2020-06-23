@@ -8,6 +8,7 @@ public class TernaryOperator {
 		Scanner input = new Scanner(System.in);
 		System.out.print("Is it a leap year? Enter true or false: ");
 		boolean isLeapYear = input.nextBoolean();
+		input.close();
 
 		// Choose the correct number of days in February
 		int days;

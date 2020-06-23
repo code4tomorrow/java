@@ -47,6 +47,8 @@ public class Billing {
 		System.out.print("Enter the price of the item: $");
 		double price = input.nextDouble();
 
+		input.close();
+
 		// apply a discount if needed
 		double discount = 0;
 		if (price > 10) {

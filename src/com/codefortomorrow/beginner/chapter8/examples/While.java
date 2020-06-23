@@ -7,6 +7,7 @@ public class While {
 		Scanner input = new Scanner(System.in);
 		System.out.print("Enter an integer: ");
 		int num = input.nextInt();
+		input.close();
 
 		// prints num, num - 1, num - 2, ... , 1
 		while (num > 0) {

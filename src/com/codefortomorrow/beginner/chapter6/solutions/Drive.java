@@ -24,6 +24,7 @@ public class Drive {
 		Scanner input = new Scanner(System.in);
 		System.out.print("Enter your age: ");
 		int age = input.nextInt();
+		input.close();
 
 		// boolean expressions
 		boolean isMinor = age < 18;

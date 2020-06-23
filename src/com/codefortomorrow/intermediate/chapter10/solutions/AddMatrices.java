@@ -39,6 +39,7 @@ public class AddMatrices {
 		String[] rawMatrix1 = input.nextLine().split(" ");
 		System.out.print("Enter matrix2: ");
 		String[] rawMatrix2 = input.nextLine().split(" ");
+		input.close();
 
 		// convert the raw input to 2D double arrays to represent
 		// matrix 1 and matrix 2

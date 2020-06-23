@@ -55,6 +55,8 @@ public class Grade {
 			}
 		}
 
+		input.close();
+
 		// display the letter grades
 		System.out.println("\nGrades:");
 		for (char grade: grades) {

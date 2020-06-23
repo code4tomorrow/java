@@ -21,6 +21,7 @@ public class FactorialFor {
 		Scanner input = new Scanner(System.in);
 		System.out.print("Enter 0 or a positive integer: ");
 		int n = input.nextInt();
+		input.close();
 
 		int product = 1;
 		for (int i = n; i > 1; i--) {

@@ -67,6 +67,8 @@ public class AddressBook {
 			System.out.println();
 		}
 
+		input.close();
+
 		System.out.println("Address Book\n");
 
 		// print out each address

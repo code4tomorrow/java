@@ -21,6 +21,7 @@ public class FactorialWhile {
 		Scanner input = new Scanner(System.in);
 		System.out.print("Enter 0 or a positive integer:  ");
 		int n = input.nextInt();
+		input.close();
 		int original = n; // store original to print the result later
 
 		int product = 1;

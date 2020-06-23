@@ -8,6 +8,7 @@ public class Vote {
 		Scanner input = new Scanner(System.in);
 		System.out.print("Enter your age: ");
 		int age = input.nextInt();
+		input.close();
 
 		// you can vote if you're 18+
 		boolean canVote = age >= 18;

@@ -22,7 +22,7 @@ public class FallThrough {
 
 		// example of when fall-through is good: phone words
 		char ch = 'a';
-		int number;
+		int number = 0;
 
 		switch (ch) {
 			case 'a':
@@ -68,5 +68,6 @@ public class FallThrough {
 				number = 9;
 				break; // technically not needed, but good practice in case you add more cases later
 		}
+		System.out.println("Number: " + number);
 	}
 }

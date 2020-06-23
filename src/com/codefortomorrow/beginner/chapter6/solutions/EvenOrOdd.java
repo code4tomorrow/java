@@ -12,6 +12,7 @@ public class EvenOrOdd {
 		Scanner input = new Scanner(System.in);
 		System.out.print("Enter an integer: ");
 		int number = input.nextInt();
+		input.close();
 
 		if (number % 2 == 0) {
 			System.out.println(number + " is even");

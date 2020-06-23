@@ -14,6 +14,8 @@ public class AverageScore {
 			scores[i] = input.nextDouble();
 		}
 
+		input.close();
+
 		// calculate the sum of the scores
 		double sum = 0;
 		for (double score: scores) {

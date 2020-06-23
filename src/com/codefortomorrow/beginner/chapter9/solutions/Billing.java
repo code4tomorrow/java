@@ -65,6 +65,8 @@ public class Billing {
 			input.nextLine(); // to move cursor to next line
 		}
 
+		input.close();
+
 		// calculate subtotal, tax, and total
 		double subtotal = 0;
 		for (double price: prices) {

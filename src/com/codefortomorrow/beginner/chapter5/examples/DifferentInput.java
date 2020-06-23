@@ -18,5 +18,7 @@ public class DifferentInput {
 		System.out.println("Name: " + name);
 		System.out.println("Pi: " + pi);
 		System.out.println("Favorite integer: " + favoriteInteger);
+
+		reader.close();
 	}
 }

@@ -29,6 +29,7 @@ public class CountAverage {
 		Scanner input = new Scanner(System.in);
 		System.out.print("Enter integers separated by spaces. Input ends if it is 0: ");
 		int n = input.nextInt();
+		input.close();
 
 		int numberOfPositives = 0;
 		int numberOfNegatives = 0;
@@ -43,11 +44,14 @@ public class CountAverage {
 			n = input.nextInt();
 		}
 
-		double average = (double) total / (numberOfPositives + numberOfNegatives);
-
-		System.out.println("The number of positives is " + numberOfPositives);
-		System.out.println("The number of negatives is " + numberOfNegatives);
-		System.out.println("The total is " + total);
-		System.out.println("The average is " + average);
+		if (numberOfPositives + numberOfNegatives != 0) {
+			double average = (double) total / (numberOfPositives + numberOfNegatives);
+			System.out.println("The number of positives is " + numberOfPositives);
+			System.out.println("The number of negatives is " + numberOfNegatives);
+			System.out.println("The total is " + total);
+			System.out.println("The average is " + average);
+		} else {
+			System.out.println("Error, no positive/negative numbers entered");
+		}
 	}
 }

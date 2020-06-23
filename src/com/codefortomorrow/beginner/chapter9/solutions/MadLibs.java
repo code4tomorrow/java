@@ -54,6 +54,8 @@ public class MadLibs {
 			System.out.print("Enter a(n) " + partsOfSpeech[i] + ": ");
 			words[i] = input.nextLine();
 		}
+		
+		input.close();
 
 		System.out.println("\nBookish Mad Libs\n");
 

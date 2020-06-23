@@ -21,5 +21,7 @@ public class FullName {
 
 		// print the user's full name
 		System.out.println("Your full name is " + firstName + " " + lastName);
+
+		input.close();
 	}
 }

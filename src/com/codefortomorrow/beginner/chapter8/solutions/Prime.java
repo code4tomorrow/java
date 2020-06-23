@@ -53,6 +53,7 @@ public class Prime {
 		Scanner input = new Scanner(System.in);
 		System.out.print("Enter the number of primes you want to print: ");
 		int numberOfPrimes = input.nextInt();
+		input.close();
 
 		System.out.println("The first " + numberOfPrimes + " prime numbers are \n");
 

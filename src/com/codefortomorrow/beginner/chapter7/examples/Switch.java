@@ -9,6 +9,7 @@ public class Switch {
 		Scanner input = new Scanner(System.in);
 		System.out.print("Enter an operation above: ");
 		String operation = input.nextLine().toLowerCase(); // case insensitive
+		input.close();
 
 		boolean isOperationValid = operation.equals("add") || operation.equals("subtract")
 				|| operation.equals("multiply") || operation.equals("divide");

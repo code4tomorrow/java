@@ -29,5 +29,7 @@ public class Average {
 		// calculate and display the average
 		double average = (number1 + number2 + number3) / 3;
 		System.out.println("The average is " + average);
+
+		input.close();
 	}
 }

@@ -16,6 +16,7 @@ public class Grade {
 		Scanner input = new Scanner(System.in);
 		System.out.print("Enter a score (as a percent): ");
 		double score = input.nextDouble();
+		input.close();
 
 		// print the letter grade based on the score
 		System.out.print("Grade: ");
