@@ -19,6 +19,6 @@ public class StringSlicer{
 
     //Use the single-argument substring + lowercase
     System.out.println(s3.toLowerCase().substring(1));
-    //You can also use substring(1,13)
+    //You can also use substring(1,15)
   }
 }
