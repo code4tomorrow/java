@@ -6,15 +6,16 @@ package com.codefortomorrow.beginner.chapter3.solutions;
  * b) "A Handmaid's Tale" -> "s"
  * c) "wE LoVe tO CoDe" -> "e love to code"
  */
-public class StringSlicer{
-  public static void main(String[] args){
+public class StringSlicer {
+  //Solution Code Below
+  public static void main(String[] args) {
     //Initialize original strings
     String s1 = "A Tale of Two Cities";
     String s2 = "A Handmaid's Tale";
     String s3 = "wE LoVe tO CoDe";
 
     //Use substring + uppercase on the first one
-    System.out.println(s1.toUpperCase().substring(11,17));
+    System.out.println(s1.toUpperCase().substring(11, 17));
 
     //Use charAt for s2
     System.out.println(s2.charAt(11));

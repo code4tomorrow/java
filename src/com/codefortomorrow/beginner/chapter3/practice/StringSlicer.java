@@ -7,7 +7,7 @@ package com.codefortomorrow.beginner.chapter3.practice;
  * c) "wE LoVe tO CoDe" -> "e love to code"
  */
 
-public class StringSlicer{
+public class StringSlicer {
   public static void main(String[] args){
     //Write Code here
   }
