@@ -1,7 +1,6 @@
 package com.codefortomorrow.intermediate.chapter11.practice;
 
 public class Average {
-
     /**
      * Difficulty: 1
      *
@@ -11,6 +10,6 @@ public class Average {
      * @return average
      */
     public static double average(double a, double b) {
-        return 0.0; //TODO: Fix!
+        return 0.0; // TODO: Fix!
     }
 }

@@ -5,6 +5,7 @@ public class PrintEvens {
      * Difficulty: 2
      *
      * Print the first n even integers
+     * (consider 0 an even number)
      * @param n number of even integers to print
      */
     public static void printEvens(int n) {
@@ -13,7 +14,7 @@ public class PrintEvens {
         while (evens < n) {
             if (i % 2 == 0) {
                 System.out.print(i + " ");
-                n++;
+                evens++;
             }
             i++;
         }
