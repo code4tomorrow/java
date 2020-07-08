@@ -24,7 +24,7 @@ are updated correctly.
 
 public class RandomNumbers {
     public static void main(String[] args) {
-        int[][] a = new int[4][6]; // create 4x6 array
+        int[][] numbers = new int[4][6]; // create 4x6 array
 		int sum = 0; // sum of all elements in array
 		int max = Integer.MIN_VALUE; // max element in array
 		int min = Integer.MAX_VALUE; // min element in array
@@ -34,21 +34,21 @@ public class RandomNumbers {
 			for (int col = 0; col < 6; col++) {
 				// generate a random number from 7 to 77
 				// and store it in the array
-				a[row][col] = randInt(7, 77);
+				numbers[row][col] = randInt(7, 77);
 
 				// print that element
-				System.out.print(a[row][col] + "\t");
+				System.out.print(numbers[row][col] + "\t");
 
 				// keep a running total of all elements
-				sum += a[row][col];
+				sum += numbers[row][col];
 
 				// update min or max as needed
-				if (a[row][col] < min) {
-					min = a[row][col];
+				if (numbers[row][col] < min) {
+					min = numbers[row][col];
 				}
 					
-				if (a[row][col] > max) {
-					max = a[row][col];
+				if (numbers[row][col] > max) {
+					max = numbers[row][col];
 				}
 			}
 			System.out.println(); // move to next row
