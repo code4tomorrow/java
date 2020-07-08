@@ -1,5 +1,5 @@
 package com.codefortomorrow.intermediate.chapter10.practice;
-
+// TODO break up into multiple problems
 /*
 Fill a 4 X 6 integer array with 24 random values from 7 to 77.
 Print the values in 4 rows of 6 elements.
@@ -24,13 +24,22 @@ Fill a 5 X 4 integer array according to the following pattern:
 Print the values in 5 rows of 4 elements.
 Use nested loops to fill the values into the array,
 rather than just declaring the values initially.
-*hint*: You can set the values of the first row.
-(You will then need a loop to print the first row
-separately from the rest of the array.)
 */
 
-public class twoDArrayPrograms {
+public class RowsCols {
 	public static void main(String[] args) {
 		// write code here
+	}
+
+	/**
+	 * Returns a random integer
+	 * in the range [min, max]
+	 * @param min  minimum random integer
+	 * @param max  maximum random integer
+	 * @return a random integer in the range
+	 * [min, max]
+	 */
+	public static int randInt(int min, int max) {
+		return min + (int) (Math.random() * ((max - min) + 1));
 	}
 }
