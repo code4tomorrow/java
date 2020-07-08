@@ -17,11 +17,12 @@ public class Pokemon {
     private boolean paralyzed;
     private boolean burned;
     private boolean frozen;
+    private boolean fainted;
 
     /**
      * Complete this constructor. The move list should be initialized to an empty array of size 4.
      * Both Max HP and Current HP should be set to 40. Name should be set to species. Level should be
-     * set to 1. XP should be set to 0. All effects should be set to false
+     * set to 1. XP should be set to 0. All effects should be set to false, including fainted.
      * @param species the species of the Pokemon
      * @param type type of the Pokemon
      */
@@ -79,6 +80,14 @@ public class Pokemon {
      * @param hp given hp to heal
      */
     public void heal(int hp) {
+
+    }
+
+    public String getName() {
+
+    }
+
+    public Move[] getMoveList() {
 
     }
 }
