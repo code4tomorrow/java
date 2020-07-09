@@ -1,6 +1,9 @@
 # Java
 Source code from Code For Tomorrow's Java course
 
+![Java (Prettier)](https://github.com/code-for-tomorrow/java/workflows/Java%20(Prettier)/badge.svg)
+![Java (Checkstyle)](https://github.com/code-for-tomorrow/java/workflows/Java%20(Checkstyle)/badge.svg)
+
 All source code is under `src/com/codefortomorrow`
 
 All class files are under `out/production/c4t-java/com/codefortomorrow`
