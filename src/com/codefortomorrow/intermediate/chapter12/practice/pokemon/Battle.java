@@ -3,6 +3,7 @@ package com.codefortomorrow.intermediate.chapter12.practice.pokemon;
 import java.util.Scanner;
 
 public class Battle {
+    private Scanner sc = new Scanner(System.in);
     private Pokemon pokemonOne;
     private Pokemon pokemonTwo;
     private int turn;
@@ -14,16 +15,37 @@ public class Battle {
     }
 
     public void runBattle() {
-        Scanner sc = new Scanner(System.in);
-        System.out.println("It's " + pokemonOne.getName() + "'s move!");
+        while(true) {
+            if (turn == 1) {
+                executeTurn(pokemonOne, pokemonTwo);
+            } else {
+                executeTurn(pokemonTwo, pokemonOne);
+            }
+            System.out.println(pokemonOne);
+            System.out.println(pokemonTwo);
+            if (pokemonOne.getCurrentHP() <= 0 || pokemonTwo.getCurrentHP() <= 0) {
+                break;
+            }
+        }
+    }
 
-        Move[] pokemonOneMoves = pokemonOne.getMoveList();
+    public void executeTurn(Pokemon pokemon, Pokemon other) {
+        System.out.println("It's " + pokemon.getName() + "'s move!");
+
+        Move[] pokemonOneMoves = pokemon.getMoveList();
         for (int i = 1; i <= pokemonOneMoves.length; i++) {
             System.out.println(i + ": " + pokemonOneMoves[i]);
         }
         System.out.println("Move #: ");
 
         int move = sc.nextInt();
-        pokemonOne.attack(pokemonTwo, move);
+        pokemon.attack(other, move);
+
+
+        if (turn == 1) {
+            turn = 0;
+        } else {
+            turn = 1;
+        }
     }
 }

@@ -38,6 +38,10 @@ public class Move {
      * @return the move's total damage
      */
     public int calculateDamage(int level) {
+        return 0; //TODO: Fix
+    }
 
+    public String getName() {
+        return name;
     }
 }

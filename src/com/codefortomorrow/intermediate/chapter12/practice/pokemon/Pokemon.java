@@ -55,7 +55,7 @@ public class Pokemon {
      * @return old move or null if not applicable
      */
     public Move learnMove(int index, Move move) {
-
+        return null; // TODO: Fix
     }
 
     /**
@@ -64,7 +64,9 @@ public class Pokemon {
      * @param moveIndex index of the move to make
      */
     public void attack(Pokemon enemy, int moveIndex) {
-
+        // Type your code here
+        System.out.println(name + " used " + moveList[moveIndex].getName() + " on " + enemy.getName());
+        System.out.println(enemy.getName() + " took " + " damage."); // TODO: Fix
     }
 
     /**
@@ -84,10 +86,18 @@ public class Pokemon {
     }
 
     public String getName() {
+        return ""; //TODO: Fix
+    }
 
+    public int getCurrentHP() {
+        return 0; // TODO: Fix
     }
 
     public Move[] getMoveList() {
+        return null; // TODO: Fix
+    }
 
+    public String toString() {
+        return name + "\n" + "HP: " + currentHP + " / " + maxHP;
     }
 }
