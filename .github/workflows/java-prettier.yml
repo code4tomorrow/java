@@ -1,0 +1,30 @@
+# Uses: https://github.com/marketplace/actions/prettier-java-action
+# Auto formats code using Prettier
+name: Java (Prettier)
+
+on: pull_request
+
+jobs:
+  prettify:
+    name: Prettify Java
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Check out Git repository
+      uses: actions/checkout@v2
+      with:
+        fetch-depth: 0
+      
+    - name: Prettify the Java code
+      uses: lwerner-lshigh/prettier_action_java@v1.1.1
+      with:
+      ### Prettier Options ###
+      # --no-semi overrides prettier printing semicolons
+      # at the ends of all statements
+      # --tab-width 4 sets the tab width to 4 spaces
+      # --write *.java formats all .java files
+        prettier_options: '--no-semi --tab-width 4 --write **/*.java'
+        branch: ${{ github.head_ref }}
+        commit_message: 'Bot: Prettified Java code!'
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

@@ -1,0 +1,5 @@
+# Ignore workflow files
+*.yml
+
+# Ignore markdown files
+*.md
