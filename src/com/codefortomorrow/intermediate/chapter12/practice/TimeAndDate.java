@@ -37,16 +37,16 @@ and prints out the current time and date.
  */
 
 public class TimeAndDate {
-	public static void main(String[] args) {
-		// write code here
-	}
+
+    public static void main(String[] args) {
+        // write code here
+    }
 }
 
 class MyTime {
-	// write code here
+    // write code here
 }
 
 class MyDate {
-	// write code here
+    // write code here
 }
-

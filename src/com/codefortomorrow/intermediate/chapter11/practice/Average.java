@@ -1,6 +1,7 @@
 package com.codefortomorrow.intermediate.chapter11.practice;
 
 public class Average {
+
     /**
      * Difficulty: 1
      *

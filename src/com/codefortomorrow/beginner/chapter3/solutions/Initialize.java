@@ -13,11 +13,12 @@ package com.codefortomorrow.beginner.chapter3.solutions;
  */
 
 public class Initialize {
-	public static void main(String[] args) {
-		boolean isRaining = false;
-		double price = 5.68;
-		char firstInitial = 'R';
-		int numberOfBooks = 35; // byte and short are also acceptable, but less common
-		long revenue = 1_512_300_125L;
-	}
+
+    public static void main(String[] args) {
+        boolean isRaining = false;
+        double price = 5.68;
+        char firstInitial = 'R';
+        int numberOfBooks = 35; // byte and short are also acceptable, but less common
+        long revenue = 1_512_300_125L;
+    }
 }

@@ -1,6 +1,7 @@
 package com.codefortomorrow.intermediate.chapter11.examples;
 
 public class VariableScope {
+
     public static void main(String[] args) {
         method1(); // prints 5.0
         method2(); // prints 2.0

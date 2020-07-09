@@ -11,7 +11,8 @@ package com.codefortomorrow.beginner.chapter6.practice;
  */
 
 public class PickYourPath {
-	public static void main(String[] args) {
-		// write code here
-	}
+
+    public static void main(String[] args) {
+        // write code here
+    }
 }

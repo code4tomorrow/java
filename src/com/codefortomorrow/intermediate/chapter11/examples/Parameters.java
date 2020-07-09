@@ -1,6 +1,7 @@
 package com.codefortomorrow.intermediate.chapter11.examples;
 
 public class Parameters {
+
     public static void main(String[] args) {
         // scoopIceCream with 1 parameter
         scoopIceCream("chocolate");
@@ -19,8 +20,9 @@ public class Parameters {
 
     public static void scoopIceCream(String flavor, boolean wantCone) {
         if (wantCone) {
-            System.out.println("Here's a scoop of " + flavor + 
-                " ice cream on a cone!");
+            System.out.println(
+                "Here's a scoop of " + flavor + " ice cream on a cone!"
+            );
         } else {
             System.out.println("Here's a scoop of " + flavor + " ice cream!");
         }

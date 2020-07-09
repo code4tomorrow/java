@@ -1,6 +1,7 @@
 package com.codefortomorrow.intermediate.chapter12.examples;
 
 public class TestPoint {
+
     public static void main(String[] args) {
         Point pt1 = new Point(5, 0);
         Point pt2 = new Point(1.4, -15);
@@ -71,7 +72,3 @@ class Point {
         return false;
     }
 }
-
-
-
-

@@ -30,57 +30,64 @@ it displays the Piano object well.
  */
 
 public class TestPiano {
-	public static void main(String[] args) {
-		Piano yamahaPiano = new Piano(22, "spruce");
-		yamahaPiano.playTriad();
-	}
+
+    public static void main(String[] args) {
+        Piano yamahaPiano = new Piano(22, "spruce");
+        yamahaPiano.playTriad();
+    }
 }
 
 class Piano extends Instrument {
-	private double hammerWeight;
-	private String backPostMaterial;
+    private double hammerWeight;
+    private String backPostMaterial;
 
-	public Piano() {
-		super("piano");
-		hammerWeight = 20;
-		backPostMaterial = "oak";
-	}
+    public Piano() {
+        super("piano");
+        hammerWeight = 20;
+        backPostMaterial = "oak";
+    }
 
-	public Piano(double hammerWeight, String backPostMaterial) {
-		super("piano");
-		this.hammerWeight = hammerWeight;
-		this.backPostMaterial = backPostMaterial;
-	}
+    public Piano(double hammerWeight, String backPostMaterial) {
+        super("piano");
+        this.hammerWeight = hammerWeight;
+        this.backPostMaterial = backPostMaterial;
+    }
 
-	public void playTriad() {
-		for (int i = 0; i < 3; i++) {
-			super.play();
-		}
-	}
+    public void playTriad() {
+        for (int i = 0; i < 3; i++) {
+            super.play();
+        }
+    }
 
-	@Override
-	public String toString() {
-		return "Piano with " + hammerWeight + "pound hammers and a " + backPostMaterial + " back post";
-	}
+    @Override
+    public String toString() {
+        return (
+            "Piano with " +
+            hammerWeight +
+            "pound hammers and a " +
+            backPostMaterial +
+            " back post"
+        );
+    }
 }
 
 class Instrument {
-	private String name;
+    private String name;
 
-	public Instrument() {
-		name = "";
-	}
+    public Instrument() {
+        name = "";
+    }
 
-	public Instrument(String name) {
-		this.name = name;
-	}
+    public Instrument(String name) {
+        this.name = name;
+    }
 
-	public void play() {
-		System.out.println("Playing instrument");
-	}
+    public void play() {
+        System.out.println("Playing instrument");
+    }
 
-	@Override
-	public String toString() {
-		return "Instrument, name: " + name;
-	}
+    @Override
+    public String toString() {
+        return "Instrument, name: " + name;
+    }
 }

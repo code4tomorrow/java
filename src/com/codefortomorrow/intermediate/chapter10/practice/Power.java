@@ -18,6 +18,7 @@ rather than just declaring the values initially.
 */
 
 public class Power {
+
     public static void main(String[] args) {
         // write code here
     }

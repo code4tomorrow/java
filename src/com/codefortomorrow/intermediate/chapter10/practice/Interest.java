@@ -21,7 +21,8 @@ use formatting to include commas for large numbers
  */
 
 public class Interest {
-	public static void main(String[] args) {
-		// write code here
-	}
+
+    public static void main(String[] args) {
+        // write code here
+    }
 }

@@ -23,19 +23,20 @@ are updated correctly.
 */
 
 public class RandomNumbers {
+
     public static void main(String[] args) {
         // write code here
     }
 
     /**
-	 * Returns a random integer
-	 * in the range [min, max]
-	 * @param min  minimum random integer
-	 * @param max  maximum random integer
-	 * @return a random integer in the range
-	 * [min, max]
-	 */
-	public static int randInt(int min, int max) {
-		return min + (int) (Math.random() * ((max - min) + 1));
-	}
+     * Returns a random integer
+     * in the range [min, max]
+     * @param min  minimum random integer
+     * @param max  maximum random integer
+     * @return a random integer in the range
+     * [min, max]
+     */
+    public static int randInt(int min, int max) {
+        return min + (int) (Math.random() * ((max - min) + 1));
+    }
 }

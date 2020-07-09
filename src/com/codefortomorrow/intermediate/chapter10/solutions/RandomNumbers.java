@@ -23,53 +23,54 @@ are updated correctly.
 */
 
 public class RandomNumbers {
+
     public static void main(String[] args) {
         int[][] numbers = new int[4][6]; // create 4x6 array
-		int sum = 0; // sum of all elements in array
-		int max = Integer.MIN_VALUE; // max element in array
-		int min = Integer.MAX_VALUE; // min element in array
+        int sum = 0; // sum of all elements in array
+        int max = Integer.MIN_VALUE; // max element in array
+        int min = Integer.MAX_VALUE; // min element in array
 
-		// iterate through each element in a
-		for (int row = 0; row < 4; row++) {
-			for (int col = 0; col < 6; col++) {
-				// generate a random number from 7 to 77
-				// and store it in the array
-				numbers[row][col] = randInt(7, 77);
+        // iterate through each element in a
+        for (int row = 0; row < 4; row++) {
+            for (int col = 0; col < 6; col++) {
+                // generate a random number from 7 to 77
+                // and store it in the array
+                numbers[row][col] = randInt(7, 77);
 
-				// print that element
-				System.out.print(numbers[row][col] + "\t");
+                // print that element
+                System.out.print(numbers[row][col] + "\t");
 
-				// keep a running total of all elements
-				sum += numbers[row][col];
+                // keep a running total of all elements
+                sum += numbers[row][col];
 
-				// update min or max as needed
-				if (numbers[row][col] < min) {
-					min = numbers[row][col];
-				}
-					
-				if (numbers[row][col] > max) {
-					max = numbers[row][col];
-				}
-			}
-			System.out.println(); // move to next row
-		}
+                // update min or max as needed
+                if (numbers[row][col] < min) {
+                    min = numbers[row][col];
+                }
 
-		// display the sum of all elements
-		// and the max and min element
-		System.out.println("Sum: " + sum);
-		System.out.println("Max: " + max);
-		System.out.println("Min: " + min);
+                if (numbers[row][col] > max) {
+                    max = numbers[row][col];
+                }
+            }
+            System.out.println(); // move to next row
+        }
+
+        // display the sum of all elements
+        // and the max and min element
+        System.out.println("Sum: " + sum);
+        System.out.println("Max: " + max);
+        System.out.println("Min: " + min);
     }
 
     /**
-	 * Returns a random integer
-	 * in the range [min, max]
-	 * @param min  minimum random integer
-	 * @param max  maximum random integer
-	 * @return a random integer in the range
-	 * [min, max]
-	 */
-	public static int randInt(int min, int max) {
-		return min + (int) (Math.random() * ((max - min) + 1));
-	}
+     * Returns a random integer
+     * in the range [min, max]
+     * @param min  minimum random integer
+     * @param max  maximum random integer
+     * @return a random integer in the range
+     * [min, max]
+     */
+    public static int randInt(int min, int max) {
+        return min + (int) (Math.random() * ((max - min) + 1));
+    }
 }

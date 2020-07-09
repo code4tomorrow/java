@@ -30,36 +30,35 @@ it displays the Piano object well.
  */
 
 public class TestPiano {
-	public static void main(String[] args) {
-		// uncomment the 2 following lines to test the Piano class
-//		Piano yamahaPiano = new Piano(22, "spruce");
-//		yamahaPiano.playTriad();
-	}
+
+    public static void main(String[] args) {
+        // uncomment the 2 following lines to test the Piano class
+        //		Piano yamahaPiano = new Piano(22, "spruce");
+        //		yamahaPiano.playTriad();
+    }
 }
 
 class Piano extends Instrument {
-	// write code here
+    // write code here
 }
 
 class Instrument {
-	private String name;
+    private String name;
 
-	public Instrument() {
-		name = "";
-	}
+    public Instrument() {
+        name = "";
+    }
 
-	public Instrument(String name) {
-		this.name = name;
-	}
+    public Instrument(String name) {
+        this.name = name;
+    }
 
-	public void play() {
-		System.out.println("Playing instrument");
-	}
+    public void play() {
+        System.out.println("Playing instrument");
+    }
 
-	@Override
-	public String toString() {
-		return "Instrument, name: " + name;
-	}
+    @Override
+    public String toString() {
+        return "Instrument, name: " + name;
+    }
 }
-
-

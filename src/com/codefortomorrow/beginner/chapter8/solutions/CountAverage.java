@@ -25,33 +25,41 @@ package com.codefortomorrow.beginner.chapter8.solutions;
 import java.util.Scanner;
 
 public class CountAverage {
-	public static void main(String[] args) {
-		Scanner input = new Scanner(System.in);
-		System.out.print("Enter integers separated by spaces. Input ends if it is 0: ");
-		int n = input.nextInt();
-		input.close();
 
-		int numberOfPositives = 0;
-		int numberOfNegatives = 0;
-		int total = 0;
-		while (n != 0) {
-			if (n > 0) {
-				numberOfPositives++;
-			} else {
-				numberOfNegatives++;
-			}
-			total += n;
-			n = input.nextInt();
-		}
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        System.out.print(
+            "Enter integers separated by spaces. Input ends if it is 0: "
+        );
+        int n = input.nextInt();
+        input.close();
 
-		if (numberOfPositives + numberOfNegatives != 0) {
-			double average = (double) total / (numberOfPositives + numberOfNegatives);
-			System.out.println("The number of positives is " + numberOfPositives);
-			System.out.println("The number of negatives is " + numberOfNegatives);
-			System.out.println("The total is " + total);
-			System.out.println("The average is " + average);
-		} else {
-			System.out.println("Error, no positive/negative numbers entered");
-		}
-	}
+        int numberOfPositives = 0;
+        int numberOfNegatives = 0;
+        int total = 0;
+        while (n != 0) {
+            if (n > 0) {
+                numberOfPositives++;
+            } else {
+                numberOfNegatives++;
+            }
+            total += n;
+            n = input.nextInt();
+        }
+
+        if (numberOfPositives + numberOfNegatives != 0) {
+            double average = (double) total /
+            (numberOfPositives + numberOfNegatives);
+            System.out.println(
+                "The number of positives is " + numberOfPositives
+            );
+            System.out.println(
+                "The number of negatives is " + numberOfNegatives
+            );
+            System.out.println("The total is " + total);
+            System.out.println("The average is " + average);
+        } else {
+            System.out.println("Error, no positive/negative numbers entered");
+        }
+    }
 }

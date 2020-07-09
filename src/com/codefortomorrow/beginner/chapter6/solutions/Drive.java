@@ -19,32 +19,33 @@ package com.codefortomorrow.beginner.chapter6.solutions;
 import java.util.Scanner;
 
 public class Drive {
-	public static void main(String[] args) {
-		// prompt user to enter their age
-		Scanner input = new Scanner(System.in);
-		System.out.print("Enter your age: ");
-		int age = input.nextInt();
-		input.close();
 
-		// boolean expressions
-		boolean isMinor = age < 18;
-		boolean isAdult = age >= 18 && age < 65;
-		boolean isSenior = age >= 65;
+    public static void main(String[] args) {
+        // prompt user to enter their age
+        Scanner input = new Scanner(System.in);
+        System.out.print("Enter your age: ");
+        int age = input.nextInt();
+        input.close();
 
-		// print which age category the person belongs to
-		if (isMinor) {
-			System.out.println("You are a minor.");
-		} else if (isAdult) {
-			System.out.println("You are an adult.");
-		} else {
-			System.out.println("You are a senior.");
-		}
+        // boolean expressions
+        boolean isMinor = age < 18;
+        boolean isAdult = age >= 18 && age < 65;
+        boolean isSenior = age >= 65;
 
-		// print whether the person can drive
-		if (isAdult || isSenior) {
-			System.out.println("Old enough to drive!");
-		} else {
-			System.out.println("Sorry, not old enough to drive.");
-		}
-	}
+        // print which age category the person belongs to
+        if (isMinor) {
+            System.out.println("You are a minor.");
+        } else if (isAdult) {
+            System.out.println("You are an adult.");
+        } else {
+            System.out.println("You are a senior.");
+        }
+
+        // print whether the person can drive
+        if (isAdult || isSenior) {
+            System.out.println("Old enough to drive!");
+        } else {
+            System.out.println("Sorry, not old enough to drive.");
+        }
+    }
 }

@@ -62,75 +62,75 @@ comments for all of the methods.
  */
 
 public class Circle extends Shape {
-	private double radius;
+    private double radius;
 
-	/** Constructs a default Circle with radius 0 */
-	public Circle() {
-		radius = 0;
-	}
+    /** Constructs a default Circle with radius 0 */
+    public Circle() {
+        radius = 0;
+    }
 
-	/**
-	 * Constructs a Circle with
-	 * the given radius
-	 * @param radius  radius of this Circle
-	 */
-	public Circle(double radius) {
-		this.radius = radius;
-	}
+    /**
+     * Constructs a Circle with
+     * the given radius
+     * @param radius  radius of this Circle
+     */
+    public Circle(double radius) {
+        this.radius = radius;
+    }
 
-	/**
-	 * Constructs a Circle with
-	 * the given radius and center (x, y)
-	 * @param x  x coordinate of the center
-	 * @param y  y coordinate of the center
-	 * @param radius  radius of this Circle
-	 */
-	public Circle(double x, double y, double radius) {
-		super(x, y);
-		this.radius = radius;
-	}
+    /**
+     * Constructs a Circle with
+     * the given radius and center (x, y)
+     * @param x  x coordinate of the center
+     * @param y  y coordinate of the center
+     * @param radius  radius of this Circle
+     */
+    public Circle(double x, double y, double radius) {
+        super(x, y);
+        this.radius = radius;
+    }
 
-	/**
-	 * Returns the radius of this Circle
-	 * @return the radius of this Circle
-	 */
-	public double getRadius() {
-		return radius;
-	}
+    /**
+     * Returns the radius of this Circle
+     * @return the radius of this Circle
+     */
+    public double getRadius() {
+        return radius;
+    }
 
-	/**
-	 * Sets the radius of this Circle
-	 * to a new value, if the new radius
-	 * is greater than or equal to 0
-	 * @param radius  new radius
-	 */
-	public void setRadius(double radius) {
-		if (radius >= 0) {
-			this.radius = radius;
-		}
-	}
+    /**
+     * Sets the radius of this Circle
+     * to a new value, if the new radius
+     * is greater than or equal to 0
+     * @param radius  new radius
+     */
+    public void setRadius(double radius) {
+        if (radius >= 0) {
+            this.radius = radius;
+        }
+    }
 
-	/**
-	 * Returns the area of this Circle
-	 * @return the area of this Circle
-	 */
-	public double getArea() {
-		return Math.PI * radius * radius;
-	}
+    /**
+     * Returns the area of this Circle
+     * @return the area of this Circle
+     */
+    public double getArea() {
+        return Math.PI * radius * radius;
+    }
 
-	/**
-	 * Returns the circumference of this Circle
-	 * @return the circumference of this Circle
-	 */
-	public double getCircumference() {
-		return Math.PI * getDiameter();
-	}
+    /**
+     * Returns the circumference of this Circle
+     * @return the circumference of this Circle
+     */
+    public double getCircumference() {
+        return Math.PI * getDiameter();
+    }
 
-	/**
-	 * Returns the diameter of this Circle
-	 * @return the diameter of this Circle
-	 */
-	public double getDiameter() {
-		return 2 * radius;
-	}
+    /**
+     * Returns the diameter of this Circle
+     * @return the diameter of this Circle
+     */
+    public double getDiameter() {
+        return 2 * radius;
+    }
 }

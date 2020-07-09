@@ -12,6 +12,7 @@ and print it below the array values.
 */
 
 public class Asterisks {
+
     public static void main(String[] args) {
         // write code here
     }
