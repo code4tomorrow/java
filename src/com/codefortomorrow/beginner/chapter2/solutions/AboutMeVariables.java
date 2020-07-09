@@ -13,10 +13,11 @@ package com.codefortomorrow.beginner.chapter2.solutions;
  */
 
 public class AboutMeVariables {
-	public static void main(String[] args) {
-		String name = "Inej Ghafa";
-		String message = "No mourners, no funerals.";
 
-		System.out.println(name + "\n" + message);
-	}
+    public static void main(String[] args) {
+        String name = "Inej Ghafa";
+        String message = "No mourners, no funerals.";
+
+        System.out.println(name + "\n" + message);
+    }
 }

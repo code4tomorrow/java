@@ -13,7 +13,8 @@ package com.codefortomorrow.beginner.chapter2.practice;
  */
 
 public class AboutMeVariables {
-	public static void main(String[] args) {
-		// write code here
-	}
+
+    public static void main(String[] args) {
+        // write code here
+    }
 }

@@ -44,7 +44,8 @@ package com.codefortomorrow.beginner.chapter9.practice;
  */
 
 public class VirusStats {
-	public static void main(String[] args) {
-		// write code here
-	}
+
+    public static void main(String[] args) {
+        // write code here
+    }
 }

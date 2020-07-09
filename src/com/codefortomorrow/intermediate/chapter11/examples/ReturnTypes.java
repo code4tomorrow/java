@@ -1,6 +1,7 @@
 package com.codefortomorrow.intermediate.chapter11.examples;
 
 public class ReturnTypes {
+
     public static void main(String[] args) {
         printSum(5, 4);
         int myNumber = sum(5, 4) / 2;

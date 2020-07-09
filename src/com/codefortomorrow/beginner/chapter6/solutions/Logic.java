@@ -8,16 +8,17 @@ package com.codefortomorrow.beginner.chapter6.solutions;
  */
 
 public class Logic {
-	public static void main(String[] args) {
-		int z = 5;
-		int y = 25;
 
-		System.out.println(z < 10 && y == z * 5); // true
-		System.out.println(z < 10 && y != z * 5); // false
-		System.out.println(z < 10 || y == z * 5); // true
-		System.out.println(z < 10 || y != z * 5); // true
+    public static void main(String[] args) {
+        int z = 5;
+        int y = 25;
 
-		System.out.println(y == z * 5); // true
-		System.out.println(y != z * 5); // false
-	}
+        System.out.println(z < 10 && y == z * 5); // true
+        System.out.println(z < 10 && y != z * 5); // false
+        System.out.println(z < 10 || y == z * 5); // true
+        System.out.println(z < 10 || y != z * 5); // true
+
+        System.out.println(y == z * 5); // true
+        System.out.println(y != z * 5); // false
+    }
 }

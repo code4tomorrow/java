@@ -37,56 +37,57 @@ and prints out the current time and date.
  */
 
 public class TimeAndDate {
-	public static void main(String[] args) {
-		MyTime time = new MyTime(5, 35, 45);
-		MyDate date = new MyDate(5, 25, 2020);
-		System.out.println("The time is " + time);
-		System.out.println("The date is " + date);
-	}
+
+    public static void main(String[] args) {
+        MyTime time = new MyTime(5, 35, 45);
+        MyDate date = new MyDate(5, 25, 2020);
+        System.out.println("The time is " + time);
+        System.out.println("The date is " + date);
+    }
 }
 
 class MyTime {
-	public int hours;
-	public int minutes;
-	public int seconds;
+    public int hours;
+    public int minutes;
+    public int seconds;
 
-	public MyTime() {
-		hours = 0;
-		minutes = 0;
-		seconds = 0;
-	}
+    public MyTime() {
+        hours = 0;
+        minutes = 0;
+        seconds = 0;
+    }
 
-	public MyTime(int hours, int minutes, int seconds) {
-		this.hours = hours;
-		this.minutes = minutes;
-		this.seconds = seconds;
-	}
+    public MyTime(int hours, int minutes, int seconds) {
+        this.hours = hours;
+        this.minutes = minutes;
+        this.seconds = seconds;
+    }
 
-	@Override
-	public String toString() {
-		return String.format("%d:%d:%d", hours, minutes, seconds);
-	}
+    @Override
+    public String toString() {
+        return String.format("%d:%d:%d", hours, minutes, seconds);
+    }
 }
 
 class MyDate {
-	public int month;
-	public int day;
-	public int year;
+    public int month;
+    public int day;
+    public int year;
 
-	public MyDate() {
-		month = 1;
-		day = 1;
-		year = 2000;
-	}
+    public MyDate() {
+        month = 1;
+        day = 1;
+        year = 2000;
+    }
 
-	public MyDate(int month, int day, int year) {
-		this.month = month;
-		this.day = day;
-		this.year = year;
-	}
+    public MyDate(int month, int day, int year) {
+        this.month = month;
+        this.day = day;
+        this.year = year;
+    }
 
-	@Override
-	public String toString() {
-		return String.format("%d/%d/%d", month, day, year);
-	}
+    @Override
+    public String toString() {
+        return String.format("%d/%d/%d", month, day, year);
+    }
 }

@@ -8,7 +8,8 @@ package com.codefortomorrow.beginner.chapter3.practice;
  */
 
 public class StringSlicer {
-  public static void main(String[] args) {
-    // Write Code here
-  }
+
+    public static void main(String[] args) {
+        // Write Code here
+    }
 }

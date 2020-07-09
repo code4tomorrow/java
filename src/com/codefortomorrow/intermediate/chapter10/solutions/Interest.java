@@ -23,23 +23,24 @@ use formatting to include commas for large numbers
 import java.util.Scanner;
 
 public class Interest {
-	public static void main(String[] args) {
-		Scanner input = new Scanner(System.in);
 
-		// prompt user for principal, rate, and time
-		System.out.print("Enter the principal amount: $");
-		double principal = input.nextDouble();
-		System.out.print("Enter the annual interest rate (as a decimal): ");
-		double rate = input.nextDouble();
-		System.out.print("Enter the period of time (in years): ");
-		int time = input.nextInt();
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
 
-		input.close();
+        // prompt user for principal, rate, and time
+        System.out.print("Enter the principal amount: $");
+        double principal = input.nextDouble();
+        System.out.print("Enter the annual interest rate (as a decimal): ");
+        double rate = input.nextDouble();
+        System.out.print("Enter the period of time (in years): ");
+        int time = input.nextInt();
 
-		// calculate the final amount using A = Pe^(rt)
-		double finalAmount = principal * Math.exp(rate * time);
+        input.close();
 
-		// display the final amount (2 decimals precision)
-		System.out.printf("The final amount is $%,.2f\n", finalAmount); // added newline to move cursor to next line
-	}
+        // calculate the final amount using A = Pe^(rt)
+        double finalAmount = principal * Math.exp(rate * time);
+
+        // display the final amount (2 decimals precision)
+        System.out.printf("The final amount is $%,.2f\n", finalAmount); // added newline to move cursor to next line
+    }
 }

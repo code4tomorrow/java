@@ -35,44 +35,45 @@ package com.codefortomorrow.beginner.chapter6.solutions;
 import java.util.Scanner;
 
 public class Billing {
-	public static void main(String[] args) {
-		final double TAX_RATE = 0.08;
 
-		// prompt user for the item name and price
-		Scanner input = new Scanner(System.in);
+    public static void main(String[] args) {
+        final double TAX_RATE = 0.08;
 
-		System.out.print("Enter the name of the item: ");
-		String itemName = input.nextLine();
+        // prompt user for the item name and price
+        Scanner input = new Scanner(System.in);
 
-		System.out.print("Enter the price of the item: $");
-		double price = input.nextDouble();
+        System.out.print("Enter the name of the item: ");
+        String itemName = input.nextLine();
 
-		input.close();
+        System.out.print("Enter the price of the item: $");
+        double price = input.nextDouble();
 
-		// apply a discount if needed
-		double discount = 0;
-		if (price > 10) {
-			// 5% off discount
-			discount = price * 0.05;
-		} else if (price > 25) {
-			// 10% off discount
-			discount = price * 0.1;
-		}
+        input.close();
 
-		// calculate the subtotal, tax, and total
-		double subtotal = price - discount;
-		double tax = subtotal * TAX_RATE;
-		double total = subtotal + tax;
+        // apply a discount if needed
+        double discount = 0;
+        if (price > 10) {
+            // 5% off discount
+            discount = price * 0.05;
+        } else if (price > 25) {
+            // 10% off discount
+            discount = price * 0.1;
+        }
 
-		// display item name, price, discount,
-		// subtotal, tax, and total
-		System.out.println("\nRECEIPT");
-		System.out.println("Item: " + itemName);
-		System.out.printf("Price: $%.2f\n", price);
-		System.out.printf("Discount: $%.2f\n", discount);
-		System.out.println("---------------------------");
-		System.out.printf("Subtotal: $%.2f\n", subtotal);
-		System.out.printf("Tax: $%.2f\n", tax);
-		System.out.printf("Total: $%.2f\n", total);
-	}
+        // calculate the subtotal, tax, and total
+        double subtotal = price - discount;
+        double tax = subtotal * TAX_RATE;
+        double total = subtotal + tax;
+
+        // display item name, price, discount,
+        // subtotal, tax, and total
+        System.out.println("\nRECEIPT");
+        System.out.println("Item: " + itemName);
+        System.out.printf("Price: $%.2f\n", price);
+        System.out.printf("Discount: $%.2f\n", discount);
+        System.out.println("---------------------------");
+        System.out.printf("Subtotal: $%.2f\n", subtotal);
+        System.out.printf("Tax: $%.2f\n", tax);
+        System.out.printf("Total: $%.2f\n", total);
+    }
 }

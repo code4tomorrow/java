@@ -1,6 +1,7 @@
 package com.codefortomorrow.intermediate.chapter12.examples;
 
 public class DotNotation {
+
     public static void main(String[] args) {
         System.out.println(Math.PI); // dot notation to access the pi constant
 

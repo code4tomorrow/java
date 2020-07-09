@@ -24,38 +24,39 @@ The word is NOT a palindrome.
 import java.util.Scanner;
 
 public class Palindrome {
-	public static void main(String[] args) {
-		// get a word from the user
-		Scanner input = new Scanner(System.in);
-		System.out.print("Enter a word: ");
 
-		// trim leading and trailing whitespace
-		// and make the word lowercase
-		String word = input.nextLine().trim().toLowerCase();
-		input.close();
+    public static void main(String[] args) {
+        // get a word from the user
+        Scanner input = new Scanner(System.in);
+        System.out.print("Enter a word: ");
 
-		int low = 0; // low index of the word
-		int high = word.length() - 1; // high index of the word
-		boolean isPalindrome = true;
+        // trim leading and trailing whitespace
+        // and make the word lowercase
+        String word = input.nextLine().trim().toLowerCase();
+        input.close();
 
-		if (word.isEmpty()) {
-			isPalindrome = false;
-		} else {
-			while (low < high) {
-				// check if chars at low and high indices are matching
-				if (word.charAt(low) != word.charAt(high)) {
-					isPalindrome = false;
-					break;
-				}
-				low++;
-				high--;
-			}
-		}
+        int low = 0; // low index of the word
+        int high = word.length() - 1; // high index of the word
+        boolean isPalindrome = true;
 
-		if (isPalindrome) {
-			System.out.println("The word is a palindrome.");
-		} else {
-			System.out.println("The word is NOT a palindrome.");
-		}
-	}
+        if (word.isEmpty()) {
+            isPalindrome = false;
+        } else {
+            while (low < high) {
+                // check if chars at low and high indices are matching
+                if (word.charAt(low) != word.charAt(high)) {
+                    isPalindrome = false;
+                    break;
+                }
+                low++;
+                high--;
+            }
+        }
+
+        if (isPalindrome) {
+            System.out.println("The word is a palindrome.");
+        } else {
+            System.out.println("The word is NOT a palindrome.");
+        }
+    }
 }

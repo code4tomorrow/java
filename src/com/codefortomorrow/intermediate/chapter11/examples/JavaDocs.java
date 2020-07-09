@@ -1,6 +1,7 @@
 package com.codefortomorrow.intermediate.chapter11.examples;
 
 public class JavaDocs {
+
     /**
      * Returns the average of two doubles
      * @param a  first double

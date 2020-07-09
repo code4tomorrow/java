@@ -15,13 +15,14 @@ package com.codefortomorrow.beginner.chapter3.solutions;
  */
 
 public class WithoutEnd {
-	public static void main(String[] args) {
-		String str1 = "Hello";
-		String str2 = "java";
-		String str3 = "coding";
 
-		System.out.println(str1.substring(1, str1.length() - 1)); // prints "ell"
-		System.out.println(str2.substring(1, str2.length() - 1)); // prints "av"
-		System.out.println(str3.substring(1, str3.length() - 1)); // prints "odin"
-	}
+    public static void main(String[] args) {
+        String str1 = "Hello";
+        String str2 = "java";
+        String str3 = "coding";
+
+        System.out.println(str1.substring(1, str1.length() - 1)); // prints "ell"
+        System.out.println(str2.substring(1, str2.length() - 1)); // prints "av"
+        System.out.println(str3.substring(1, str3.length() - 1)); // prints "odin"
+    }
 }

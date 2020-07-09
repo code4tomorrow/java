@@ -1,6 +1,7 @@
 package com.codefortomorrow.intermediate.chapter11.examples;
 
 public class Overloading {
+
     public static void main(String[] args) {
         // call 2-arg sum
         System.out.println(sum(2, 3)); // prints 5

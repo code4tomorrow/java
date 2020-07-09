@@ -3,6 +3,7 @@ package com.codefortomorrow.intermediate.chapter11.examples;
 import java.util.Scanner;
 
 public class WhyMethods {
+
     public static void main(String[] args) {
         // cleaner code because methods group actions
         printMessages();
