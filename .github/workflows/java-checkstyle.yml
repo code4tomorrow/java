@@ -1,0 +1,28 @@
+# Uses: https://github.com/marketplace/actions/run-java-checkstyle
+# Submits review annotations based on checkstyle errors
+name: Java (Checkstyle)
+
+on: pull_request
+
+jobs:
+  lint-java:
+    name: Lint Java with checkstyle
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Check out Git repository
+      uses: actions/checkout@v2
+      
+    - name: Setup Java JDK
+      uses: actions/setup-java@v1.3.0
+      with:
+        java-version: '12.x'
+
+    - name: Run checkstyle with reviewdog
+      uses: nikitasavinov/checkstyle-action@0.2.0
+      with:
+        # Report reviewdog results to
+        # GitHub PullRequest review comments
+        # using GitHub Personal API Access Token
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        reporter: github-pr-review
