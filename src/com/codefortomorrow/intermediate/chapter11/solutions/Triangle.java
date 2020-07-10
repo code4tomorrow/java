@@ -15,7 +15,8 @@ public static double area(double side1, double side2, double side3)
 Write a test program that reads three sides for a triangle
 and computes the area if the sides form a valid triangle.
 Otherwise, it displays that the input is invalid.
-Use Heron's Formula to calculate the area of a triangle given 3 sides.
+Use Heron's Formula to calculate the area of a triangle given 3 sides:
+https://www.mathsisfun.com/geometry/herons-formula.html
 
 Adapted from Exercise 6.19, Introduction to Java Programming (Comprehensive),
 10th ed. by Y. Daniel Liang
