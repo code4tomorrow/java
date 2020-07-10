@@ -17,6 +17,5 @@ public class PrintEvens {
     public static void main(String[] args) {
         // Test your printEvens method here
     }
-
     // Write your printEvens method here
 }

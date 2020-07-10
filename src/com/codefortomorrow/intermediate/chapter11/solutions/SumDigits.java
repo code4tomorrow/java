@@ -28,6 +28,7 @@ Adapted from Exercise 6.2, Introduction to Java Programming (Comprehensive),
 */
 
 public class SumDigits {
+
     public static void main(String[] args) {
         // prompt user for integer
         Scanner input = new Scanner(System.in);
@@ -38,7 +39,7 @@ public class SumDigits {
         // print the sum of the digits in that integer
         System.out.println("Sum of digits in " + n + ": " + sumDigits(n));
     }
-    
+
     /**
      * Return the sum of all of the digits
      * in the given number

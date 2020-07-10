@@ -23,10 +23,11 @@ Adapted from Exercise 6.19, Introduction to Java Programming (Comprehensive),
 */
 
 public class Triangle {
+
     public static void main(String[] args) {
         // prompt user to enter triangle side lengths
         Scanner input = new Scanner(System.in);
-        
+
         System.out.print("Enter side 1: ");
         double side1 = input.nextDouble();
 
@@ -44,7 +45,9 @@ public class Triangle {
             double area = area(side1, side2, side3);
             System.out.println("The area of the triangle is: " + area);
         } else {
-            System.out.println("Invalid input. Those sides don't form a triangle.");
+            System.out.println(
+                "Invalid input. Those sides don't form a triangle."
+            );
         }
     }
 
@@ -56,9 +59,11 @@ public class Triangle {
      * @return true if the given side lengths form a valid triangle
      */
     public static boolean isValid(double side1, double side2, double side3) {
-        return (side1 + side2 > side3) &&
+        return (
+            (side1 + side2 > side3) &&
             (side1 + side3 > side2) &&
-            (side2 + side3 > side3);
+            (side2 + side3 > side3)
+        );
     }
 
     /**

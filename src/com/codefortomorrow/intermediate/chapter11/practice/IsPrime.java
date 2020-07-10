@@ -13,9 +13,9 @@ Solution from Listing 6.7, Introduction to Java Programming (Comprehensive),
 */
 
 public class IsPrime {
+
     public static void main(String[] args) {
         // test isPrime method here
     }
-
     // write isPrime method here
 }

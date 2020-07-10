@@ -26,9 +26,9 @@ Adapted from Exercise 6.2, Introduction to Java Programming (Comprehensive),
 */
 
 public class SumDigits {
+
     public static void main(String[] args) {
         // test sumDigits here
     }
-    
     // write sumDigits method here
 }

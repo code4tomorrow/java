@@ -21,9 +21,9 @@ Adapted from Exercise 6.19, Introduction to Java Programming (Comprehensive),
 */
 
 public class Triangle {
+
     public static void main(String[] args) {
         // test methods here
     }
-
     // write methods here
 }
