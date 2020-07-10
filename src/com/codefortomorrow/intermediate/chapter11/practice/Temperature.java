@@ -13,6 +13,8 @@ The formula for the conversion is:
 fahrenheit = (9.0 / 5) * celsius + 32
 celsius = (5.0 / 9) * (fahrenheit – 32)
 
+Bonus points for writing JavaDoc comments for both methods.
+
 Write a test program that asks the user for a temperature
 in Fahrenheit and prints out the Celsius conversion. Then
 ask the user for a temperature in Celsius and print out
