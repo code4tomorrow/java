@@ -32,6 +32,8 @@ You can read about that here:
 https://www.tutorialspoint.com/java/java_string_matches.htm
 https://www.vogella.com/tutorials/JavaRegularExpressions/article.html
 
+Bonus points for writing JavaDoc comments for the methods.
+
 Adapted from Exercise 6.18, Introduction to Java Programming (Comprehensive),
 10th ed. by Y. Daniel Liang
 */
