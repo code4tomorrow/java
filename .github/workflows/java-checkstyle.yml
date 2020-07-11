@@ -19,10 +19,10 @@ jobs:
         java-version: '12.x'
 
     - name: Run checkstyle with reviewdog
-      uses: nikitasavinov/checkstyle-action@0.2.0
+      uses: nikitasavinov/checkstyle-action@0.3.0
       with:
-        # Report reviewdog results to
-        # GitHub PullRequest review comments
-        # using GitHub Personal API Access Token
-        github_token: ${{ secrets.GITHUB_TOKEN }}
+        github_token: ${{ secrets.GITHUB_TOKEN }
+        # submit review comments based on reviewdog findings
         reporter: github-pr-review
+        # report on anything that is in an added/modified file
+        filter: file
