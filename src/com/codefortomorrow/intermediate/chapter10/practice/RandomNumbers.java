@@ -18,8 +18,10 @@ Hint: You will need to set the max to Integer.MIN_VALUE
 and min to Integer.MAX_VALUE when you first initialize them.
 This ensures that when you iterate through the
 randomly generated numbers in your array, the max and min
-are updated correctly.
-(You can also set max to 6 and min to 78.)
+are updated correctly. (You can also set max to 6 and min to 78.)
+
+Note: Interested in seeing how the randInt() method works? You can read
+this Stack Overflow response: https://bit.ly/38IkeY2
 */
 
 public class RandomNumbers {
@@ -33,8 +35,7 @@ public class RandomNumbers {
      * in the range [min, max]
      * @param min  minimum random integer
      * @param max  maximum random integer
-     * @return a random integer in the range
-     * [min, max]
+     * @return a random integer in the range [min, max]
      */
     public static int randInt(int min, int max) {
         return min + (int) (Math.random() * ((max - min) + 1));
