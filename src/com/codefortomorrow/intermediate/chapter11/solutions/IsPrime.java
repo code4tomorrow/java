@@ -13,6 +13,7 @@ Solution from Listing 6.7, Introduction to Java Programming (Comprehensive),
 */
 
 public class IsPrime {
+
     public static void main(String[] args) {
         System.out.println(isPrime(5)); // true
         System.out.println(isPrime(1)); // false

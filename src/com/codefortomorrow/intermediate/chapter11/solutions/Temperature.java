@@ -30,24 +30,31 @@ public class Temperature {
 
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
-        
+
         // prompt user for temp in deg F
         System.out.print("Enter the temperature in degrees Fahrenheit: ");
         double fahrenheit = input.nextDouble();
 
         // print that temp in deg C
-        System.out.println(fahrenheit + " deg F is " + fahrenheitToCelsius(fahrenheit) + " deg C");
+        System.out.println(
+            fahrenheit +
+            " deg F is " +
+            fahrenheitToCelsius(fahrenheit) +
+            " deg C"
+        );
 
         // prompt user for temp in deg C
         System.out.print("Enter the temperature in degrees Celsius: ");
         double celsius = input.nextDouble();
-        
+
         // print that temp in deg F
-        System.out.println(celsius + " deg C is " + celsiusToFahrenheit(celsius) + " deg F");
-        
+        System.out.println(
+            celsius + " deg C is " + celsiusToFahrenheit(celsius) + " deg F"
+        );
+
         input.close();
     }
-    
+
     /**
      * Convert from Celsius to Fahrenheit
      * @param celsius  temperature in degrees Celsius

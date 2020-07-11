@@ -37,7 +37,6 @@ public class PrintEvens {
             i++;
         }
         System.out.println(); // move cursor to next line
-
         // alternate solution using for loop
         // int numberOfEvensPrinted = 0;
         // for (int num = 0; numberOfEvensPrinted < n; num++) {

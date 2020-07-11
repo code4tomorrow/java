@@ -29,6 +29,5 @@ public class Temperature {
     public static void main(String[] args) {
         // Test your methods here
     }
-    
     // Write your methods here
 }

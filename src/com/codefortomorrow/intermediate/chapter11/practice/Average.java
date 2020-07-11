@@ -19,6 +19,5 @@ public class Average {
     public static void main(String[] args) {
         // Test your average method here
     }
-
     // Write your average method here
 }

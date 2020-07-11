@@ -39,9 +39,9 @@ Adapted from Exercise 6.18, Introduction to Java Programming (Comprehensive),
 */
 
 public class CheckPassword {
+
     public static void main(String[] args) {
         // test checkPassword method here
     }
-    
     // write checkPassword method here
 }

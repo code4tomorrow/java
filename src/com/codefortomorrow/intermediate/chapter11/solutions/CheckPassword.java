@@ -41,6 +41,7 @@ Adapted from Exercise 6.18, Introduction to Java Programming (Comprehensive),
 */
 
 public class CheckPassword {
+
     public static void main(String[] args) {
         // prompt user for a password
         Scanner input = new Scanner(System.in);
@@ -55,7 +56,7 @@ public class CheckPassword {
             System.out.println("Invalid Password");
         }
     }
-    
+
     /**
      * Check if a password is valid.
      * A valid password must:
@@ -88,7 +89,6 @@ public class CheckPassword {
             }
         }
         return true;
-
         // alternate solution using regular expressions
         // matches lowercase and uppercase letters, and digits
         // the + indicates the pattern must match 1 or more times
