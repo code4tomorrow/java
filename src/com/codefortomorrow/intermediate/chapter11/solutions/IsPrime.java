@@ -30,9 +30,9 @@ public class IsPrime {
             return false;
         }
 
-        // only need to check divisors up to number / 2
+        // only need to check divisors up to sqrt(number)
         // because after that the factors "repeat"
-        for (int divisor = 2; divisor <= number / 2; divisor++) {
+        for (int divisor = 2; divisor <= Math.sqrt(number); divisor++) {
             if (number % divisor == 0) { // primes only divisible by 1 and itself
                 return false; // number isn't a prime
             }
