@@ -90,49 +90,50 @@ Adapted from Exercise 6.31, Introduction to Java Programming (Comprehensive),
 */
 
 public class CreditCard {
+
     public static void main(String[] args) {
         // write code here
     }
-	
-	/** Returns true if the card number is valid */
-	public static boolean isValid(long number) {
-		return false;
-	}
-	
-	/** Returns the sum of the doubled even-place digits, from right to left */
-	public static int sumOfDoubleEvenPlace(long number) {
-		return 0;
-	}
-	
-	/** 
-	 * Returns the given number if it is a single digit,
-	 * otherwise return the sum of the two digits
-	 */
-	public static int getDigit(int n) {				
-		return 0;		
-	}
-	
-	/** Returns the sum of the odd-place digits, from right to left */
-	public static int sumOfOddPlace(long number) {
-		return 0;
-	}
 
-	/** Return true if d is a prefix for a number */
-	public static boolean prefixMatched(long number, int d) {
-		return false;
-	}
-	
-	/** Returns the number of digits in the given number */
-	public static int getSize(long number) {
-		return 0;
-	}
-	
-	/** 
-	 * Returns the first k number of digits from number.
-	 * If the number of digits in number is less than k, 
-	 * returns number.
-	 */
-	public static long getPrefix(long number, int k) {
-		return 0;
-	}
+    /** Returns true if the card number is valid */
+    public static boolean isValid(long number) {
+        return false;
+    }
+
+    /** Returns the sum of the doubled even-place digits, from right to left */
+    public static int sumOfDoubleEvenPlace(long number) {
+        return 0;
+    }
+
+    /**
+     * Returns the given number if it is a single digit,
+     * otherwise return the sum of the two digits
+     */
+    public static int getDigit(int n) {
+        return 0;
+    }
+
+    /** Returns the sum of the odd-place digits, from right to left */
+    public static int sumOfOddPlace(long number) {
+        return 0;
+    }
+
+    /** Return true if d is a prefix for a number */
+    public static boolean prefixMatched(long number, int d) {
+        return false;
+    }
+
+    /** Returns the number of digits in the given number */
+    public static int getSize(long number) {
+        return 0;
+    }
+
+    /**
+     * Returns the first k number of digits from number.
+     * If the number of digits in number is less than k,
+     * returns number.
+     */
+    public static long getPrefix(long number, int k) {
+        return 0;
+    }
 }
