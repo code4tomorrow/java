@@ -21,7 +21,7 @@ jobs:
     - name: Run checkstyle with reviewdog
       uses: nikitasavinov/checkstyle-action@0.3.0
       with:
-        github_token: ${{ secrets.GITHUB_TOKEN }
+        github_token: ${{ secrets.GITHUB_TOKEN }}
         # submit review comments based on reviewdog findings
         reporter: github-pr-review
         # report on anything that is in an added/modified file
