@@ -25,7 +25,7 @@ jobs:
         # submit review comments based on reviewdog findings
         reporter: github-pr-review
         # report on anything that is in an added/modified file
-        filter: file
+        filter_mode: file
         fail_on_error: true
-        config: google_checks_mod.xml
+        checkstyle_config: google_checks_mod.xml
         workdir: ./src/com/code4tomorrow
