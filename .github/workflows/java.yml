@@ -42,11 +42,11 @@ jobs:
         uses: actions/checkout@v2
 
       - name: Run checkstyle with reviewdog
-        uses: nikitasavinov/checkstyle-action@master
+        uses: nikitasavinov/checkstyle-action@0.3.1
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           # submit review comments based on reviewdog findings
-          reporter: github-pr-check
+          reporter: github-pr-review
           # report on anything that is in an added/modified file
           filter_mode: file
           fail_on_error: true
