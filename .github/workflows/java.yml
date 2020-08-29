@@ -1,0 +1,59 @@
+# Uses: https://github.com/marketplace/actions/prettier-java-action
+# Auto formats code using Prettier
+# Uses: https://github.com/marketplace/actions/run-java-checkstyle
+# Submits review annotations based on checkstyle errors
+
+name: Java Style
+
+on: pull_request
+
+jobs:
+  prettify:
+    name: Prettify Java
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Check out Git repository
+      uses: actions/checkout@v2
+      with:
+        fetch-depth: 0
+      
+    - name: Prettify the Java code
+      uses: lwerner-lshigh/prettier_action_java@v1.1.1
+      with:
+      ### Prettier Options ###
+      # --no-semi overrides prettier printing semicolons
+      # at the ends of all statements
+      # --tab-width 4 sets the tab width to 4 spaces
+      # --write *.java formats all .java files
+        prettier_options: '--no-semi --tab-width 4 --write **/*.java'
+        branch: ${{ github.head_ref }}
+        commit_message: 'Bot: Prettified Java code!'
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+  checkstyle:
+    name: Java Checkstyle
+    runs-on: ubuntu-latest
+    needs: prettify
+
+    steps:
+      - name: Check out Git repository
+        uses: actions/checkout@v2
+        
+      - name: Setup Java JDK
+        uses: actions/setup-java@v1.3.0
+        with:
+          java-version: '12.x'
+
+      - name: Run checkstyle with reviewdog
+        uses: nikitasavinov/checkstyle-action@master
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          # submit review comments based on reviewdog findings
+          reporter: github-pr-review
+          # report on anything that is in an added/modified file
+          filter_mode: file
+          fail_on_error: true
+          checkstyle_config: google_checks_mod.xml
+          workdir: src/com/code4tomorrow  # working dir relative to root dir
