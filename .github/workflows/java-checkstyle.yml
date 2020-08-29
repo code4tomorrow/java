@@ -27,5 +27,5 @@ jobs:
         # report on anything that is in an added/modified file
         filter_mode: file
         fail_on_error: true
-        checkstyle_config: google_checks_mod.xml
-        workdir: ./src/com/code4tomorrow
+        checkstyle_config: ./../google_checks_mod.xml  # relative to workflow dir?
+        workdir: ./src/com/code4tomorrow  # working dir relative to root dir
