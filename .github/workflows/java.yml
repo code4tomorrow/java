@@ -40,20 +40,15 @@ jobs:
     steps:
       - name: Check out Git repository
         uses: actions/checkout@v2
-        
-      - name: Setup Java JDK
-        uses: actions/setup-java@v1.3.0
-        with:
-          java-version: '12.x'
 
       - name: Run checkstyle with reviewdog
         uses: nikitasavinov/checkstyle-action@master
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           # submit review comments based on reviewdog findings
-          reporter: github-pr-review
+          reporter: github-pr-check
           # report on anything that is in an added/modified file
           filter_mode: file
           fail_on_error: true
           checkstyle_config: google_checks_mod.xml
-          workdir: src/com/code4tomorrow  # working dir relative to root dir
+          workdir: src/com/codefortomorrow  # working dir relative to root dir
