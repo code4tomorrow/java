@@ -28,4 +28,4 @@ jobs:
         filter_mode: file
         fail_on_error: true
         checkstyle_config: google_checks_mod.xml
-        workdir: ./src/com/code4tomorrow  # working dir relative to root dir
+        workdir: src/com/code4tomorrow  # working dir relative to root dir
