@@ -19,10 +19,13 @@ jobs:
         java-version: '12.x'
 
     - name: Run checkstyle with reviewdog
-      uses: nikitasavinov/checkstyle-action@0.3.0
+      uses: nikitasavinov/checkstyle-action@0.3.1
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         # submit review comments based on reviewdog findings
         reporter: github-pr-review
         # report on anything that is in an added/modified file
         filter: file
+        fail_on_error: true
+        config: google_checks_mod.xml
+        workdir: ./src/com/code4tomorrow
