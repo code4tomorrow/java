@@ -42,7 +42,7 @@ jobs:
         uses: actions/checkout@v2
 
       - name: Run checkstyle with reviewdog
-        uses: nikitasavinov/checkstyle-action@0.3.1
+        uses: nikitasavinov/checkstyle-action@master
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           # submit review comments based on reviewdog findings
