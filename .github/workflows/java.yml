@@ -45,10 +45,8 @@ jobs:
         uses: nikitasavinov/checkstyle-action@master
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          # submit review comments based on reviewdog findings
-          reporter: github-pr-review
-          # report on anything that is in an added/modified file
-          filter_mode: file
+          reporter: github-pr-review  # submit review comments based on reviewdog findings
+          filter_mode: file  # report on anything that is in an added/modified file
           fail_on_error: true
           checkstyle_config: google_checks_mod.xml
           workdir: src/com/codefortomorrow  # working dir relative to root dir
