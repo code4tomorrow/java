@@ -1,6 +1,5 @@
 package com.codefortomorrow.advanced.chapter13.practice;
 
-import java.lang.Math;
 /*
 Write a method called isPrime which returns
 true if the given integer is prime and false otherwise.
@@ -14,6 +13,8 @@ as many numbers as they want until they enter -1.
 Note: There are more complex solutions, but this is the fastest one
 within the scope of this chapter.
 */
+
+import java.lang.Math;
 import java.util.Scanner;
 
 public class PrimePractice {
@@ -25,9 +26,10 @@ public class PrimePractice {
             System.out.print("Enter an integer to check: ");
             s = reader.nextInt();
             if (s != -1) {
-                if (isPrime(s, 2)) System.out.println(
-                    "That is a prime!"
-                ); else System.out.println("Not a prime!");
+                if (isPrime(s, 2))
+                  System.out.println("That is a prime!");
+                else
+                  System.out.println("Not a prime!");
             }
         }
     }
@@ -35,11 +37,14 @@ public class PrimePractice {
     //n is the number to check, z is the current number being divided
     public static boolean isPrime(int n, int z) {
         //Check base cases
-        if (n <= 2) return (n == 2) ? true : false;
+        if (n <= 2)
+          return (n == 2) ? true : false;
         //Ternary operator used there
-        if (n % z == 0) return false;
+        if (n % z == 0)
+          return false;
         //If z gets high enough that z > sqrt(n), then n is prime, because factors just repeat after
-        if (Math.pow(z, 2) > n) return true;
+        if (Math.pow(z, 2) > n)
+          return true;
 
         //If none of the above work
         return isPrime(n, z + 1);
