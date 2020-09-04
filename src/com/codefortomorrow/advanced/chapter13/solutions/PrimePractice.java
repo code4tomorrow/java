@@ -18,35 +18,34 @@ import java.lang.Math;
 import java.util.Scanner;
 
 public class PrimePractice {
-
-    public static void main(String[] args) {
-        int s = 0;
-        while (s != -1) {
-            Scanner reader = new Scanner(System.in);
-            System.out.print("Enter an integer to check: ");
-            s = reader.nextInt();
-            if (s != -1) {
-                if (isPrime(s, 2))
-                  System.out.println("That is a prime!");
-                else
-                  System.out.println("Not a prime!");
-            }
-        }
+  public static void main(String[] args) {
+    int s = 0;
+    while (s != -1) {
+      Scanner reader = new Scanner(System.in);
+      System.out.print("Enter an integer to check: ");
+      s = reader.nextInt();
+      if (s != -1) {
+        if (isPrime(s, 2))
+          System.out.println("That is a prime!");
+        else
+          System.out.println("Not a prime!");
+      }
     }
+  }
 
-    //n is the number to check, z is the current number being divided
-    public static boolean isPrime(int n, int z) {
-        //Check base cases
-        if (n <= 2)
-          return (n == 2) ? true : false;
-        //Ternary operator used there
-        if (n % z == 0)
-          return false;
-        //If z gets high enough that z > sqrt(n), then n is prime, because factors just repeat after
-        if (Math.pow(z, 2) > n)
-          return true;
+  //n is the number to check, z is the current number being divided
+  public static boolean isPrime(int n, int z) {
+    //Check base cases
+    if (n <= 2)
+      return (n == 2) ? true : false;
+    //Ternary operator used there
+    if (n % z == 0)
+      return false;
+    //If z gets high enough that z > sqrt(n), then n is prime, because factors just repeat after
+    if (Math.pow(z, 2) > n)
+      return true;
 
-        //If none of the above work
-        return isPrime(n, z + 1);
-    }
+    //If none of the above work
+    return isPrime(n, z + 1);
+  }
 }
