@@ -36,7 +36,7 @@ public class PrimePractice {
     }
 
     /**
-     * isPrime checks the primality of a given integer
+     * isPrime checks the primality of a given integer.
      * @param n  The integer to check
      * @param z  Current divisor (used for recursion)
      * @return boolean true if prime and false if not
