@@ -33,7 +33,12 @@ public class PrimePractice {
         }
     }
 
-    //n is the number to check, z is the current number being divided
+    /**
+   * isPrime checks the primality of a given integer
+   * @param n The integer to check
+   * @param z Current Divisor(used for recursion)
+   * @return boolean true if prime and false if not
+   */
     public static boolean isPrime(int n, int z) {
         //Check base cases
         if (n <= 2) return (n == 2) ? true : false;
