@@ -1,6 +1,9 @@
 # Uses: https://github.com/marketplace/actions/prettier-java-action
 # Auto formats code using Prettier
-name: Java (Prettier)
+# Uses: https://github.com/marketplace/actions/run-java-checkstyle
+# Submits review annotations based on checkstyle errors
+
+name: Java Style
 
 on: pull_request
 
@@ -28,3 +31,22 @@ jobs:
         commit_message: 'Bot: Prettified Java code!'
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+  checkstyle:
+    name: Java Checkstyle
+    runs-on: ubuntu-latest
+    needs: prettify
+
+    steps:
+      - name: Check out Git repository
+        uses: actions/checkout@v2
+
+      - name: Run checkstyle with reviewdog
+        uses: nikitasavinov/checkstyle-action@master
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          reporter: github-pr-review  # submit review comments based on reviewdog findings
+          filter_mode: file  # report on anything that is in an added/modified file
+          fail_on_error: true
+          checkstyle_config: google_checks_mod.xml
+          workdir: src/com/codefortomorrow  # working dir relative to root dir
