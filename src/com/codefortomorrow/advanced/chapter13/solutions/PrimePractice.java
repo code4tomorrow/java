@@ -27,7 +27,7 @@ public class PrimePractice {
             if (number != -1) {
                 if (isPrime(number, 2)) {
                     System.out.println("That is a prime!");
-                } else { 
+                } else {
                     System.out.println("Not a prime!");
                 }
             }
@@ -46,7 +46,7 @@ public class PrimePractice {
         if (n <= 2) {
             return n == 2;
         }
-        
+
         // If n is divisible by the current divisor,
         // it has a factor other than 1 and thus is
         // not prime
