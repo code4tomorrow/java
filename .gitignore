@@ -3,5 +3,4 @@
 
 # ignore files
 c4t-java.iml
-*.xml
 .DS_Store
