@@ -323,12 +323,12 @@
                value="^@return the *|^This method returns |^A [{]@code [a-zA-Z0-9]+[}]( is a )"/>
     </module>
     <!--
-      Modification: Disabled Javadoc Paragraph check
-      https://checkstyle.sourceforge.io/config_javadoc.html#JavadocParagraph
+      Modification: Disabled the commented out checks
+      https://checkstyle.sourceforge.io/config_javadoc.html
 
     <module name="JavadocParagraph"/>
-    -->
     <module name="RequireEmptyLineBeforeBlockTagGroup"/>
+    -->
     <module name="AtclauseOrder">
       <property name="tagOrder" value="@param, @return, @throws, @deprecated"/>
       <property name="target"
