@@ -5,3 +5,6 @@
 c4t-java.iml
 *.xml
 .DS_Store
+*.class
+*.zip
+*.txt
