@@ -1,6 +1,7 @@
 package com.codefortomorrow.intermediate.chapter12.examples;
 
 public class TestInstrument {
+
     public static void main(String[] args) {
         // construct a new Guitar object
         Guitar taylorGuitar = new Guitar("acoustic", "steel");

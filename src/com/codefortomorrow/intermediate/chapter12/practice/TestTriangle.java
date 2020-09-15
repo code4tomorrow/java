@@ -30,11 +30,12 @@ calling triangle1.equals(triangle2).
  */
 
 public class TestTriangle {
-	public static void main(String[] args) {
-		// write code here
-	}
+
+    public static void main(String[] args) {
+        // write code here
+    }
 }
 
 class Triangle {
-	// write code here
+    // write code here
 }

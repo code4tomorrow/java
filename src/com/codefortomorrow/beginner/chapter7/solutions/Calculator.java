@@ -21,53 +21,56 @@ package com.codefortomorrow.beginner.chapter7.solutions;
 import java.util.Scanner;
 
 public class Calculator {
-	public static void main(String[] args) {
-		System.out.println("Operators: + - * / %");
 
-		// prompt user for an operator
-		Scanner input = new Scanner(System.in);
-		System.out.print("Enter an operator above: ");
-		// assume operator is first character in the line
-		char operator = input.nextLine().charAt(0);
-		input.close();
+    public static void main(String[] args) {
+        System.out.println("Operators: + - * / %");
 
-		boolean isOperatorValid =
-				operator == '+' ||
-				operator == '-' ||
-				operator == '*' ||
-				operator == '/' ||
-				operator == '%';
+        // prompt user for an operator
+        Scanner input = new Scanner(System.in);
+        System.out.print("Enter an operator above: ");
+        // assume operator is first character in the line
+        char operator = input.nextLine().charAt(0);
+        input.close();
 
-		// do the calculation if the operator is valid
-		if (isOperatorValid) {
-			System.out.print("Enter operand 1: ");
-			double operand1 = input.nextDouble();
+        boolean isOperatorValid =
+            operator == '+' ||
+            operator == '-' ||
+            operator == '*' ||
+            operator == '/' ||
+            operator == '%';
 
-			System.out.print("Enter operand 2: ");
-			double operand2 = input.nextDouble();
+        // do the calculation if the operator is valid
+        if (isOperatorValid) {
+            System.out.print("Enter operand 1: ");
+            double operand1 = input.nextDouble();
 
-			double result = 0; // placeholder
-			switch (operator) {
-				case '+':
-					result = operand1 + operand2;
-					break;
-				case '-':
-					result = operand1 - operand2;
-					break;
-				case '*':
-					result = operand1 * operand2;
-					break;
-				case '/':
-					result = operand1 / operand2;
-					break;
-				case '%':
-					result = operand1 % operand2;
-					break;
-			}
-			System.out.println(operand1 + " " + operator + " " + operand2 + " = " + result);
-		} else {
-			// print an error message if the operator is invalid
-			System.out.println("Sorry, that is not a valid operator.");
-		}
-	}
+            System.out.print("Enter operand 2: ");
+            double operand2 = input.nextDouble();
+
+            double result = 0; // placeholder
+            switch (operator) {
+                case '+':
+                    result = operand1 + operand2;
+                    break;
+                case '-':
+                    result = operand1 - operand2;
+                    break;
+                case '*':
+                    result = operand1 * operand2;
+                    break;
+                case '/':
+                    result = operand1 / operand2;
+                    break;
+                case '%':
+                    result = operand1 % operand2;
+                    break;
+            }
+            System.out.println(
+                operand1 + " " + operator + " " + operand2 + " = " + result
+            );
+        } else {
+            // print an error message if the operator is invalid
+            System.out.println("Sorry, that is not a valid operator.");
+        }
+    }
 }

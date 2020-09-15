@@ -23,52 +23,60 @@ package com.codefortomorrow.beginner.chapter9.solutions;
 import java.util.Scanner;
 
 public class GradeBook {
-	public static void main(String[] args) {
-		final int NUMBER_OF_STUDENTS = 6;
 
-		String[] firstName = new String[NUMBER_OF_STUDENTS];
-		char[] lastInitial = new char[NUMBER_OF_STUDENTS];
-		long[] studentIDNumber = new long[NUMBER_OF_STUDENTS];
-		int[] pointsEarned = new int[NUMBER_OF_STUDENTS];
-		int[] pointsPossible = new int[NUMBER_OF_STUDENTS];
-		double[] percent = new double[NUMBER_OF_STUDENTS];
+    public static void main(String[] args) {
+        final int NUMBER_OF_STUDENTS = 6;
 
-		Scanner input = new Scanner(System.in);
+        String[] firstName = new String[NUMBER_OF_STUDENTS];
+        char[] lastInitial = new char[NUMBER_OF_STUDENTS];
+        long[] studentIDNumber = new long[NUMBER_OF_STUDENTS];
+        int[] pointsEarned = new int[NUMBER_OF_STUDENTS];
+        int[] pointsPossible = new int[NUMBER_OF_STUDENTS];
+        double[] percent = new double[NUMBER_OF_STUDENTS];
 
-		for (int i = 0; i < NUMBER_OF_STUDENTS; i++) {
-			System.out.println("Student #" + (i + 1));
+        Scanner input = new Scanner(System.in);
 
-			System.out.print("Enter first name: ");
-			firstName[i] = input.nextLine();
+        for (int i = 0; i < NUMBER_OF_STUDENTS; i++) {
+            System.out.println("Student #" + (i + 1));
 
-			System.out.print("Enter last initial: ");
-			lastInitial[i] = input.nextLine().charAt(0);
+            System.out.print("Enter first name: ");
+            firstName[i] = input.nextLine();
 
-			System.out.print("Enter student ID number: ");
-			studentIDNumber[i] = input.nextLong();
+            System.out.print("Enter last initial: ");
+            lastInitial[i] = input.nextLine().charAt(0);
 
-			System.out.print("Enter points earned: ");
-			pointsEarned[i] = input.nextInt();
+            System.out.print("Enter student ID number: ");
+            studentIDNumber[i] = input.nextLong();
 
-			System.out.print("Enter points possible: ");
-			pointsPossible[i] = input.nextInt();
+            System.out.print("Enter points earned: ");
+            pointsEarned[i] = input.nextInt();
 
-			input.nextLine(); // move cursor to next line
+            System.out.print("Enter points possible: ");
+            pointsPossible[i] = input.nextInt();
 
-			// calculate percent
-			percent[i] = ((double) pointsEarned[i] / pointsPossible[i]) * 100;
+            input.nextLine(); // move cursor to next line
 
-			System.out.println();
-		}
+            // calculate percent
+            percent[i] = ((double) pointsEarned[i] / pointsPossible[i]) * 100;
 
-		input.close();
+            System.out.println();
+        }
 
-		// display grade book
-		System.out.print("Grade Book\n");
+        input.close();
 
-		for (int i = 0; i < NUMBER_OF_STUDENTS; i++) {
-			System.out.printf("%s %s \t %d \t %d / %d \t %.2f%% \n", firstName[i], lastInitial[i],
-					studentIDNumber[i], pointsEarned[i], pointsPossible[i], percent[i]);
-		}
-	}
+        // display grade book
+        System.out.print("Grade Book\n");
+
+        for (int i = 0; i < NUMBER_OF_STUDENTS; i++) {
+            System.out.printf(
+                "%s %s \t %d \t %d / %d \t %.2f%% \n",
+                firstName[i],
+                lastInitial[i],
+                studentIDNumber[i],
+                pointsEarned[i],
+                pointsPossible[i],
+                percent[i]
+            );
+        }
+    }
 }

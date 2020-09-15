@@ -10,7 +10,8 @@ package com.codefortomorrow.beginner.chapter5.practice;
  */
 
 public class CircleArea {
-	public static void main(String[] args) {
-		// write code here
-	}
+
+    public static void main(String[] args) {
+        // write code here
+    }
 }

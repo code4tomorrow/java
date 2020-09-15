@@ -7,7 +7,8 @@ package com.codefortomorrow.beginner.chapter7.practice;
  */
 
 public class Month {
-	public static void main(String[] args) {
-		// write code here
-	}
+
+    public static void main(String[] args) {
+        // write code here
+    }
 }

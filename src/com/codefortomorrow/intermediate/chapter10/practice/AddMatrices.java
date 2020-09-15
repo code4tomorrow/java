@@ -25,7 +25,8 @@ package com.codefortomorrow.intermediate.chapter10.practice;
  */
 
 public class AddMatrices {
-	public static void main(String[] args) {
-		// write code here
-	}
+
+    public static void main(String[] args) {
+        // write code here
+    }
 }

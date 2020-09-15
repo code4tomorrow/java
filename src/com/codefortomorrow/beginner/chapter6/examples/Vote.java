@@ -3,35 +3,38 @@ package com.codefortomorrow.beginner.chapter6.examples;
 import java.util.Scanner;
 
 public class Vote {
-	public static void main(String[] args) {
-		// prompt user to enter their age
-		Scanner input = new Scanner(System.in);
-		System.out.print("Enter your age: ");
-		int age = input.nextInt();
-		input.close();
 
-		// you can vote if you're 18+
-		boolean canVote = age >= 18;
+    public static void main(String[] args) {
+        // prompt user to enter their age
+        Scanner input = new Scanner(System.in);
+        System.out.print("Enter your age: ");
+        int age = input.nextInt();
+        input.close();
 
-		// if statement
-		if (canVote) {
-			System.out.println("You can vote!");
-		}
+        // you can vote if you're 18+
+        boolean canVote = age >= 18;
 
-		// if-else statement
-		if (canVote) {
-			System.out.println("You can vote!");
-		} else {
-			System.out.println("Sorry, you can't vote yet.");
-		}
+        // if statement
+        if (canVote) {
+            System.out.println("You can vote!");
+        }
 
-		// else if
-		if (canVote) {
-			System.out.println("You can vote!");
-		} else if (age >= 16) {
-			System.out.println("In California, you can register to vote.");
-		} else {
-			System.out.println("Sorry, you can't vote yet or register to vote in California.");
-		}
-	}
+        // if-else statement
+        if (canVote) {
+            System.out.println("You can vote!");
+        } else {
+            System.out.println("Sorry, you can't vote yet.");
+        }
+
+        // else if
+        if (canVote) {
+            System.out.println("You can vote!");
+        } else if (age >= 16) {
+            System.out.println("In California, you can register to vote.");
+        } else {
+            System.out.println(
+                "Sorry, you can't vote yet or register to vote in California."
+            );
+        }
+    }
 }

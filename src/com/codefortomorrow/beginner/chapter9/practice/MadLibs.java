@@ -18,7 +18,8 @@ package com.codefortomorrow.beginner.chapter9.practice;
  */
 
 public class MadLibs {
-	public static void main(String[] args) {
-		// write code here
-	}
+
+    public static void main(String[] args) {
+        // write code here
+    }
 }

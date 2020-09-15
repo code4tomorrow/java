@@ -25,30 +25,31 @@ package com.codefortomorrow.beginner.chapter4.solutions;
  */
 
 public class Billing {
-	public static void main(String[] args) {
-		// sales tax is 8%
-		final double TAX_RATE = 0.08;
 
-		// set prices for the 3 items
-		double item1 = 5.25;
-		double item2 = 7.25;
-		double item3 = 10.5;
+    public static void main(String[] args) {
+        // sales tax is 8%
+        final double TAX_RATE = 0.08;
 
-		// calculate subtotal, tax, and total
-		double subtotal = item1 + item2 + item3;
-		double tax = subtotal * TAX_RATE;
-		double total = subtotal + tax;
+        // set prices for the 3 items
+        double item1 = 5.25;
+        double item2 = 7.25;
+        double item3 = 10.5;
 
-		// display the prices of the 3 items
-		System.out.println("Item 1 costs $" + item1);
-		System.out.println("Item 2 costs $" + item2);
-		System.out.println("Item 3 costs $" + item3);
+        // calculate subtotal, tax, and total
+        double subtotal = item1 + item2 + item3;
+        double tax = subtotal * TAX_RATE;
+        double total = subtotal + tax;
 
-		System.out.println();
+        // display the prices of the 3 items
+        System.out.println("Item 1 costs $" + item1);
+        System.out.println("Item 2 costs $" + item2);
+        System.out.println("Item 3 costs $" + item3);
 
-		// display the subtotal, tax, and total
-		System.out.println("Subtotal: $" + subtotal);
-		System.out.println("Tax: $" + tax);
-		System.out.println("Total: $" + total);
-	}
+        System.out.println();
+
+        // display the subtotal, tax, and total
+        System.out.println("Subtotal: $" + subtotal);
+        System.out.println("Tax: $" + tax);
+        System.out.println("Total: $" + total);
+    }
 }

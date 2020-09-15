@@ -35,54 +35,57 @@ package com.codefortomorrow.beginner.chapter9.solutions;
 import java.util.Scanner;
 
 public class AddressBook {
-	public static void main(String[] args) {
-		final int NUMBER_OF_ADDRESSES = 5;
 
-		// arrays store the address info
-		int[] number = new int[NUMBER_OF_ADDRESSES];
-		String[] street = new String[NUMBER_OF_ADDRESSES];
-		char[] apartment = new char[NUMBER_OF_ADDRESSES];
-		int[] zipCode = new int[NUMBER_OF_ADDRESSES];
+    public static void main(String[] args) {
+        final int NUMBER_OF_ADDRESSES = 5;
 
-		Scanner input = new Scanner(System.in);
+        // arrays store the address info
+        int[] number = new int[NUMBER_OF_ADDRESSES];
+        String[] street = new String[NUMBER_OF_ADDRESSES];
+        char[] apartment = new char[NUMBER_OF_ADDRESSES];
+        int[] zipCode = new int[NUMBER_OF_ADDRESSES];
 
-		// prompt user for each address and store it
-		for (int i = 0; i < NUMBER_OF_ADDRESSES; i++) {
-			System.out.println("Address #" + (i + 1));
+        Scanner input = new Scanner(System.in);
 
-			System.out.print("Enter the house number: ");
-			number[i] = input.nextInt();
+        // prompt user for each address and store it
+        for (int i = 0; i < NUMBER_OF_ADDRESSES; i++) {
+            System.out.println("Address #" + (i + 1));
 
-			input.nextLine(); // move cursor to next line
+            System.out.print("Enter the house number: ");
+            number[i] = input.nextInt();
 
-			System.out.print("Enter the street: ");
-			street[i] = input.nextLine();
+            input.nextLine(); // move cursor to next line
 
-			System.out.print("Enter the apartment, or '-' if apartment is not applicable: ");
-			apartment[i] = input.nextLine().charAt(0);
+            System.out.print("Enter the street: ");
+            street[i] = input.nextLine();
 
-			System.out.print("Enter the zip code: ");
-			zipCode[i] = input.nextInt();
+            System.out.print(
+                "Enter the apartment, or '-' if apartment is not applicable: "
+            );
+            apartment[i] = input.nextLine().charAt(0);
 
-			System.out.println();
-		}
+            System.out.print("Enter the zip code: ");
+            zipCode[i] = input.nextInt();
 
-		input.close();
+            System.out.println();
+        }
 
-		System.out.println("Address Book\n");
+        input.close();
 
-		// print out each address
-		for (int i = 0; i < NUMBER_OF_ADDRESSES; i++) {
-			System.out.print(number[i] + " " + street[i] + " ");
+        System.out.println("Address Book\n");
 
-			// if apartment is '-', don't print the apartment
-			if (apartment[i] != '-') {
-				System.out.print("Apt " + apartment[i] + " ");
-			}
+        // print out each address
+        for (int i = 0; i < NUMBER_OF_ADDRESSES; i++) {
+            System.out.print(number[i] + " " + street[i] + " ");
 
-			// pad zeroes to the left so that zip codes are
-			// 5 digits long
-			System.out.printf("%05d\n", zipCode[i]);
-		}
-	}
+            // if apartment is '-', don't print the apartment
+            if (apartment[i] != '-') {
+                System.out.print("Apt " + apartment[i] + " ");
+            }
+
+            // pad zeroes to the left so that zip codes are
+            // 5 digits long
+            System.out.printf("%05d\n", zipCode[i]);
+        }
+    }
 }

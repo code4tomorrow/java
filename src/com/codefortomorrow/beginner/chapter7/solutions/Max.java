@@ -13,15 +13,16 @@ package com.codefortomorrow.beginner.chapter7.solutions;
 import java.util.Scanner;
 
 public class Max {
-	public static void main(String[] args) {
-		Scanner input = new Scanner(System.in);
-		System.out.print("Enter number 1: ");
-		double n1 = input.nextDouble();
-		System.out.print("Enter number 2: ");
-		double n2 = input.nextDouble();
-		input.close();
 
-		double max = (n1 > n2) ? n1 : n2; // real world: use Math.max(n1, n2)
-		System.out.println("The max of " + n1 + " and " + n2 + " is " + max);
-	}
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        System.out.print("Enter number 1: ");
+        double n1 = input.nextDouble();
+        System.out.print("Enter number 2: ");
+        double n2 = input.nextDouble();
+        input.close();
+
+        double max = (n1 > n2) ? n1 : n2; // real world: use Math.max(n1, n2)
+        System.out.println("The max of " + n1 + " and " + n2 + " is " + max);
+    }
 }

@@ -10,30 +10,36 @@ all of the getter methods on the Book object again to check that the setter meth
  */
 
 public class TestBook {
-	public static void main(String[] args) {
-		// create a book object using 5-arg constructor
-		Book myBook = new Book("Six of Crows", "Leigh Bardugo",
-				"fantasy", 465, 5);
 
-		// call all getters
-		System.out.println(myBook.getTitle());
-		System.out.println(myBook.getAuthor());
-		System.out.println(myBook.getGenre());
-		System.out.println(myBook.getNumberOfPages());
-		System.out.println(myBook.getRating());
+    public static void main(String[] args) {
+        // create a book object using 5-arg constructor
+        Book myBook = new Book(
+            "Six of Crows",
+            "Leigh Bardugo",
+            "fantasy",
+            465,
+            5
+        );
 
-		// call all setters
-		myBook.setTitle("The Lost Hero");
-		myBook.setAuthor("Rick Riordan");
-		myBook.setGenre("sci-fi fantasy");
-		myBook.setNumberOfPages(553);
-		myBook.setRating(4.5);
+        // call all getters
+        System.out.println(myBook.getTitle());
+        System.out.println(myBook.getAuthor());
+        System.out.println(myBook.getGenre());
+        System.out.println(myBook.getNumberOfPages());
+        System.out.println(myBook.getRating());
 
-		// call all getters
-		System.out.println(myBook.getTitle());
-		System.out.println(myBook.getAuthor());
-		System.out.println(myBook.getGenre());
-		System.out.println(myBook.getNumberOfPages());
-		System.out.println(myBook.getRating());
-	}
+        // call all setters
+        myBook.setTitle("The Lost Hero");
+        myBook.setAuthor("Rick Riordan");
+        myBook.setGenre("sci-fi fantasy");
+        myBook.setNumberOfPages(553);
+        myBook.setRating(4.5);
+
+        // call all getters
+        System.out.println(myBook.getTitle());
+        System.out.println(myBook.getAuthor());
+        System.out.println(myBook.getGenre());
+        System.out.println(myBook.getNumberOfPages());
+        System.out.println(myBook.getRating());
+    }
 }

@@ -15,7 +15,8 @@ package com.codefortomorrow.beginner.chapter8.practice;
  */
 
 public class FactorialWhile {
-	public static void main(String[] args) {
-		// write code here
-	}
+
+    public static void main(String[] args) {
+        // write code here
+    }
 }

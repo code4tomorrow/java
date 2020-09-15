@@ -62,36 +62,36 @@ comments for all of the methods.
  */
 
 public class Shape {
-	public double x; // x coordinate of center of the shape
-	public double y; // y coordinate of center of the shape
+    public double x; // x coordinate of center of the shape
+    public double y; // y coordinate of center of the shape
 
-	/** Constructs a default Shape object with center (0, 0) */
-	public Shape() {
-		x = 0;
-		y = 0;
-	}
+    /** Constructs a default Shape object with center (0, 0) */
+    public Shape() {
+        x = 0;
+        y = 0;
+    }
 
-	/**
-	 * Constructs a Shape object with
-	 * a given center (x, y)
-	 * @param x  x coordinate of the center
-	 * @param y  y coordinate of the center
-	 */
-	public Shape(double x, double y) {
-		this.x = x;
-		this.y = y;
-	}
+    /**
+     * Constructs a Shape object with
+     * a given center (x, y)
+     * @param x  x coordinate of the center
+     * @param y  y coordinate of the center
+     */
+    public Shape(double x, double y) {
+        this.x = x;
+        this.y = y;
+    }
 
-	/**
-	 * Returns the distance between
-	 * the center points of this Shape
-	 * and another Shape
-	 * @param s  another Shape object
-	 * @return the distance between
-	 * the center points of this Shape
-	 * and another Shape
-	 */
-	public double getDistance(Shape s) {
-		return Math.sqrt(Math.pow(x - s.x, 2) + Math.pow(y - s.y, 2));
-	}
+    /**
+     * Returns the distance between
+     * the center points of this Shape
+     * and another Shape
+     * @param s  another Shape object
+     * @return the distance between
+     * the center points of this Shape
+     * and another Shape
+     */
+    public double getDistance(Shape s) {
+        return Math.sqrt(Math.pow(x - s.x, 2) + Math.pow(y - s.y, 2));
+    }
 }

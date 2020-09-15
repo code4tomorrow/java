@@ -1,14 +1,21 @@
 package com.codefortomorrow.intermediate.chapter11.practice;
 
+/*
+Code a method printEvens that takes an integer parameter n.
+The method should print the first n even numbers to the console.
+(Note that 0 is considered an even number.)
+
+Test if your printEvens method works in the main method
+by calling it at least 3 times with different arguments.
+
+Bonus points if you write a JavaDoc comment
+for the printEvens method.
+*/
+
 public class PrintEvens {
-    /**
-     * Difficulty: 1
-     *
-     * Print the first n even integers
-     * (consider 0 an even number)
-     * @param n number of even integers to print
-     */
-    public static void printEvens(int n) {
-        // write code here
+
+    public static void main(String[] args) {
+        // Test your printEvens method here
     }
+    // Write your printEvens method here
 }

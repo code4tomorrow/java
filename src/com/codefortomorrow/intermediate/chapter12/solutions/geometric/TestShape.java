@@ -62,22 +62,29 @@ comments for all of the methods.
  */
 
 public class TestShape {
-	public static void main(String[] args) {
-		Shape[] shapes = {
-				new Rectangle(1.25, 236),
-				new Rectangle(15, 36),
-				new Circle(326),
-				new Circle(15),
-		};
 
-		for (Shape s: shapes) {
-			if (s instanceof Rectangle) {
-				System.out.println("Rectangle area: " + ((Rectangle) s).getArea());
-				System.out.println("Rectangle perimeter: " + ((Rectangle) s).getPerimeter());
-			} else if (s instanceof Circle) {
-				System.out.println("Circle area: " + ((Circle) s).getArea());
-				System.out.println("Circle circumference: " + ((Circle) s).getCircumference());
-			}
-		}
-	}
+    public static void main(String[] args) {
+        Shape[] shapes = {
+            new Rectangle(1.25, 236),
+            new Rectangle(15, 36),
+            new Circle(326),
+            new Circle(15),
+        };
+
+        for (Shape s : shapes) {
+            if (s instanceof Rectangle) {
+                System.out.println(
+                    "Rectangle area: " + ((Rectangle) s).getArea()
+                );
+                System.out.println(
+                    "Rectangle perimeter: " + ((Rectangle) s).getPerimeter()
+                );
+            } else if (s instanceof Circle) {
+                System.out.println("Circle area: " + ((Circle) s).getArea());
+                System.out.println(
+                    "Circle circumference: " + ((Circle) s).getCircumference()
+                );
+            }
+        }
+    }
 }

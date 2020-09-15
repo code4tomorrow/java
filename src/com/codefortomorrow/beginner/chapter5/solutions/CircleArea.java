@@ -12,16 +12,17 @@ package com.codefortomorrow.beginner.chapter5.solutions;
 import java.util.Scanner;
 
 public class CircleArea {
-	public static void main(String[] args) {
-		// prompt user to enter a radius
-		Scanner input = new Scanner(System.in);
-		System.out.print("Enter a radius: ");
-		double radius = input.nextDouble();
 
-		// calculate and display the circle's area
-		double area = Math.PI * radius * radius;
-		System.out.println("Area of the circle is: " + area);
+    public static void main(String[] args) {
+        // prompt user to enter a radius
+        Scanner input = new Scanner(System.in);
+        System.out.print("Enter a radius: ");
+        double radius = input.nextDouble();
 
-		input.close();
-	}
+        // calculate and display the circle's area
+        double area = Math.PI * radius * radius;
+        System.out.println("Area of the circle is: " + area);
+
+        input.close();
+    }
 }

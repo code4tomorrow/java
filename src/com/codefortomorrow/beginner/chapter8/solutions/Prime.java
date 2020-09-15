@@ -45,47 +45,50 @@ package com.codefortomorrow.beginner.chapter8.solutions;
 import java.util.Scanner;
 
 public class Prime {
-	public static void main(String[] args) {
-		final int NUMBER_OF_PRIMES_PER_LINE = 10; // display 10 per line
-		int count = 0; // count the number of prime numbers
-		int number = 2; // a number to be tested for primeness
 
-		Scanner input = new Scanner(System.in);
-		System.out.print("Enter the number of primes you want to print: ");
-		int numberOfPrimes = input.nextInt();
-		input.close();
+    public static void main(String[] args) {
+        final int NUMBER_OF_PRIMES_PER_LINE = 10; // display 10 per line
+        int count = 0; // count the number of prime numbers
+        int number = 2; // a number to be tested for primeness
 
-		System.out.println("The first " + numberOfPrimes + " prime numbers are \n");
+        Scanner input = new Scanner(System.in);
+        System.out.print("Enter the number of primes you want to print: ");
+        int numberOfPrimes = input.nextInt();
+        input.close();
 
-		// repeatedly find prime numbers
-		while (count < numberOfPrimes) {
-			// assume the number is prime
-			boolean isPrime = true; // is the current number prime?
+        System.out.println(
+            "The first " + numberOfPrimes + " prime numbers are \n"
+        );
 
-			// test whether number is prime
-			for (int divisor = 2; divisor <= number / 2; divisor++) {
-				if (number % divisor == 0) { // if true, number isn't prime
-					isPrime = false;
-					break; // exit for loop
-				}
-			}
+        // repeatedly find prime numbers
+        while (count < numberOfPrimes) {
+            // assume the number is prime
+            boolean isPrime = true; // is the current number prime?
 
-			// display the prime number and increase the count
-			if (isPrime) {
-				count++;
+            // test whether number is prime
+            for (int divisor = 2; divisor <= number / 2; divisor++) {
+                if (number % divisor == 0) { // if true, number isn't prime
+                    isPrime = false;
+                    break; // exit for loop
+                }
+            }
 
-				if (count % NUMBER_OF_PRIMES_PER_LINE == 0) { // reached 10 numbers in one line
-					// display the number and advance to the new line
-					System.out.println(number);
-				} else {
-					// print on the same line if 10 haven't been printed
-					// on this line yet
-					System.out.print(number + " ");
-				}
-			}
+            // display the prime number and increase the count
+            if (isPrime) {
+                count++;
 
-			// check if the next number is prime
-			number++;
-		}
-	}
+                if (count % NUMBER_OF_PRIMES_PER_LINE == 0) { // reached 10 numbers in one line
+                    // display the number and advance to the new line
+                    System.out.println(number);
+                } else {
+                    // print on the same line if 10 haven't been printed
+                    // on this line yet
+                    System.out.print(number + " ");
+                }
+            }
+
+            // check if the next number is prime
+            number++;
+        }
+    }
 }

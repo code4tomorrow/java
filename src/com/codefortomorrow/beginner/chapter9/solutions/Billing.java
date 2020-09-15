@@ -38,57 +38,58 @@ package com.codefortomorrow.beginner.chapter9.solutions;
 import java.util.Scanner;
 
 public class Billing {
-	public static void main(String[] args) {
-		final double TAX_RATE = 0.08;
-		final String DIVIDER = "--------------------------------------";
 
-		Scanner input = new Scanner(System.in);
+    public static void main(String[] args) {
+        final double TAX_RATE = 0.08;
+        final String DIVIDER = "--------------------------------------";
 
-		// prompt user for # of items
-		System.out.print("Enter the number of items: ");
-		int numberOfItems = input.nextInt();
-		input.nextLine(); // to move cursor to next line
+        Scanner input = new Scanner(System.in);
 
-		// create arrays to store item names and prices
-		String[] items = new String[numberOfItems];
-		double[] prices = new double[numberOfItems];
+        // prompt user for # of items
+        System.out.print("Enter the number of items: ");
+        int numberOfItems = input.nextInt();
+        input.nextLine(); // to move cursor to next line
 
-		// prompt user to enter item names and prices
-		// and store them in the items and prices arrays
-		for (int i = 0; i < numberOfItems; i++) {
-			System.out.print("Enter item #" + (i + 1) + ": ");
-			items[i] = input.nextLine();
+        // create arrays to store item names and prices
+        String[] items = new String[numberOfItems];
+        double[] prices = new double[numberOfItems];
 
-			System.out.print("Enter price of item #" + (i + 1) + ": $");
-			prices[i] = input.nextDouble();
+        // prompt user to enter item names and prices
+        // and store them in the items and prices arrays
+        for (int i = 0; i < numberOfItems; i++) {
+            System.out.print("Enter item #" + (i + 1) + ": ");
+            items[i] = input.nextLine();
 
-			input.nextLine(); // to move cursor to next line
-		}
+            System.out.print("Enter price of item #" + (i + 1) + ": $");
+            prices[i] = input.nextDouble();
 
-		input.close();
+            input.nextLine(); // to move cursor to next line
+        }
 
-		// calculate subtotal, tax, and total
-		double subtotal = 0;
-		for (double price: prices) {
-			subtotal += price;
-		}
+        input.close();
 
-		double tax = subtotal * TAX_RATE;
-		double total = subtotal + tax;
+        // calculate subtotal, tax, and total
+        double subtotal = 0;
+        for (double price : prices) {
+            subtotal += price;
+        }
 
-		// print the receipt
-		System.out.println("\nRECEIPT");
-		System.out.println(DIVIDER);
+        double tax = subtotal * TAX_RATE;
+        double total = subtotal + tax;
 
-		// print items and prices
-		for (int i = 0; i < numberOfItems; i++) {
-			System.out.printf("%s - $%.2f\n", items[i], prices[i]);
-		}
-		System.out.println(DIVIDER);
+        // print the receipt
+        System.out.println("\nRECEIPT");
+        System.out.println(DIVIDER);
 
-		// print subtotal, tax, and total
-		System.out.printf("Subtotal: $%.2f\n", subtotal);
-		System.out.printf("Tax:      $%.2f\n", tax);
-		System.out.printf("Total:    $%.2f\n", total);
-	}
+        // print items and prices
+        for (int i = 0; i < numberOfItems; i++) {
+            System.out.printf("%s - $%.2f\n", items[i], prices[i]);
+        }
+        System.out.println(DIVIDER);
+
+        // print subtotal, tax, and total
+        System.out.printf("Subtotal: $%.2f\n", subtotal);
+        System.out.printf("Tax:      $%.2f\n", tax);
+        System.out.printf("Total:    $%.2f\n", total);
+    }
 }

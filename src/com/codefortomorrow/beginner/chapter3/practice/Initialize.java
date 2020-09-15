@@ -13,11 +13,12 @@ package com.codefortomorrow.beginner.chapter3.practice;
  */
 
 public class Initialize {
-	public static void main(String[] args) {
-//		isRaining = false;
-//		price = 5.68;
-//		firstInitial = 'R';
-//		numberOfBooks = 35;
-//		revenue = 1_512_300_125L;
-	}
+
+    public static void main(String[] args) {
+        //		isRaining = false;
+        //		price = 5.68;
+        //		firstInitial = 'R';
+        //		numberOfBooks = 35;
+        //		revenue = 1_512_300_125L;
+    }
 }

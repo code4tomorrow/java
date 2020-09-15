@@ -19,7 +19,8 @@ package com.codefortomorrow.beginner.chapter7.practice;
  */
 
 public class Calculator {
-	public static void main(String[] args) {
-		// write code here
-	}
+
+    public static void main(String[] args) {
+        // write code here
+    }
 }

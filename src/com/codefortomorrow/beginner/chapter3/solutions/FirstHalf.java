@@ -14,13 +14,14 @@ package com.codefortomorrow.beginner.chapter3.solutions;
  */
 
 public class FirstHalf {
-	public static void main(String[] args) {
-		String str1 = "WooHoo";
-		String str2 = "HelloThere";
-		String str3 = "abcdef";
 
-		System.out.println(str1.substring(0, str1.length() / 2)); // prints "Woo"
-		System.out.println(str2.substring(0, str2.length() / 2)); // prints "Hello"
-		System.out.println(str3.substring(0, str3.length() / 2)); // prints "abc"
-	}
+    public static void main(String[] args) {
+        String str1 = "WooHoo";
+        String str2 = "HelloThere";
+        String str3 = "abcdef";
+
+        System.out.println(str1.substring(0, str1.length() / 2)); // prints "Woo"
+        System.out.println(str2.substring(0, str2.length() / 2)); // prints "Hello"
+        System.out.println(str3.substring(0, str3.length() / 2)); // prints "abc"
+    }
 }
