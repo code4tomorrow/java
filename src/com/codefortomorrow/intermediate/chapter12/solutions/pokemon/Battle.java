@@ -1,4 +1,4 @@
-package com.codefortomorrow.intermediate.chapter12.practice.pokemon;
+package com.codefortomorrow.intermediate.chapter12.solutions.pokemon;
 
 import java.util.Scanner;
 
