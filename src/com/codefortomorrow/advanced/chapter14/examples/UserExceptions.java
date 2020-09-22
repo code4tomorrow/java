@@ -5,7 +5,7 @@ public class UserExceptions {
     public static void main(String[] args) {
         try {
             call(null);
-        } catch(MyException e) {
+        } catch (MyException e) {
             System.out.println("Caught MyException");
         }
 
@@ -13,7 +13,6 @@ public class UserExceptions {
     }
 
     public static void call(String s) throws MyException {
-        if(s == null)
-            throw new MyException();
+        if (s == null) throw new MyException();
     }
 }
