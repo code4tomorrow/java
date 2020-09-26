@@ -46,7 +46,15 @@ public class Pokemon {
     /**
      * Complete this constructor. See the first constructor for default values.
      */
-    public Pokemon(Move[] moveList, int maxHP, int XP, String species, String type, String name, int level) {
+    public Pokemon(
+        Move[] moveList,
+        int maxHP,
+        int XP,
+        String species,
+        String type,
+        String name,
+        int level
+    ) {
         this.moveList = moveList;
         this.maxHP = maxHP;
         this.XP = XP;
@@ -78,7 +86,13 @@ public class Pokemon {
     public void attack(Pokemon enemy, int moveIndex) {
         int damage = moveList[moveIndex].calculateDamage(level);
         enemy.takeDamage(damage);
-        System.out.println(name + " used " + moveList[moveIndex].getName() + " on " + enemy.getName());
+        System.out.println(
+            name +
+            " used " +
+            moveList[moveIndex].getName() +
+            " on " +
+            enemy.getName()
+        );
         System.out.println(enemy.getName() + " took " + damage + " damage.");
     }
 

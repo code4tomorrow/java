@@ -8,14 +8,14 @@ public class Battle {
     private Pokemon pokemonTwo;
     private int turn;
 
-    public Battle (Pokemon pokemonOne, Pokemon pokemonTwo) {
+    public Battle(Pokemon pokemonOne, Pokemon pokemonTwo) {
         this.pokemonOne = pokemonOne;
         this.pokemonTwo = pokemonTwo;
         turn = 1;
     }
 
     public void runBattle() {
-        while(true) {
+        while (true) {
             if (turn == 1) {
                 executeTurn(pokemonOne, pokemonTwo);
             } else {
@@ -23,7 +23,9 @@ public class Battle {
             }
             System.out.println(pokemonOne);
             System.out.println(pokemonTwo);
-            if (pokemonOne.getCurrentHP() <= 0 || pokemonTwo.getCurrentHP() <= 0) {
+            if (
+                pokemonOne.getCurrentHP() <= 0 || pokemonTwo.getCurrentHP() <= 0
+            ) {
                 break;
             }
         }
@@ -34,11 +36,11 @@ public class Battle {
 
         Move[] pokemonMoves = pokemon.getMoveList();
         for (int i = 1; i <= pokemonMoves.length; i++) {
-            System.out.println(i + ": " + pokemonMoves[i-1].getName());
+            System.out.println(i + ": " + pokemonMoves[i - 1].getName());
         }
         System.out.print("Move #: ");
         int move = sc.nextInt();
-        pokemon.attack(other, move-1);
+        pokemon.attack(other, move - 1);
         System.out.println();
 
         if (turn == 1) {

@@ -26,9 +26,7 @@ public class Pokemon {
      * @param species the species of the Pokemon
      * @param type type of the Pokemon
      */
-    public Pokemon(String species, String type) {
-
-    }
+    public Pokemon(String species, String type) {}
 
     /**
      * Complete this constructor. See the above constructor for default values.
@@ -36,16 +34,20 @@ public class Pokemon {
      * @param type of the Pokemon
      * @param name the name/nickname of the Pokemon
      */
-    public Pokemon(String species, String type, String name) {
-
-    }
+    public Pokemon(String species, String type, String name) {}
 
     /**
      * Complete this constructor. See the first constructor for default values.
      */
-    public Pokemon(Move[] moveList, int maxHP, int XP, String species, String type, String name, int level) {
-
-    }
+    public Pokemon(
+        Move[] moveList,
+        int maxHP,
+        int XP,
+        String species,
+        String type,
+        String name,
+        int level
+    ) {}
 
     /**
      * Places given move in the moveList at the given index. If a move was previously present, it
@@ -65,7 +67,13 @@ public class Pokemon {
      */
     public void attack(Pokemon enemy, int moveIndex) {
         // Type your code here
-        System.out.println(name + " used " + moveList[moveIndex].getName() + " on " + enemy.getName());
+        System.out.println(
+            name +
+            " used " +
+            moveList[moveIndex].getName() +
+            " on " +
+            enemy.getName()
+        );
         System.out.println(enemy.getName() + " took " + " damage."); // TODO: Fix
     }
 
@@ -81,9 +89,7 @@ public class Pokemon {
      * Adds given HP to current HP
      * @param hp given hp to heal
      */
-    public void heal(int hp) {
-
-    }
+    public void heal(int hp) {}
 
     public String getName() {
         return ""; //TODO: Fix

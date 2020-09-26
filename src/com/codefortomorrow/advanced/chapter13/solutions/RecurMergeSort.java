@@ -1,6 +1,7 @@
 package com.codefortomorrow.advanced.chapter13.solutions;
 
 public class RecurMergeSort {
+
     public static void recurMergeSort(Comparable[] array, int start, int end) {
         if (start >= end) {
             return;

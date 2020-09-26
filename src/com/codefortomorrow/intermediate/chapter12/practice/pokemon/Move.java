@@ -22,7 +22,15 @@ public class Move {
      * @param freezing whether the move freezes
      * @param baseDamage base damage of the move
      */
-    public Move(String name, boolean poisoning, boolean sleeping, boolean paralyzing, boolean burning, boolean freezing, int baseDamage) {
+    public Move(
+        String name,
+        boolean poisoning,
+        boolean sleeping,
+        boolean paralyzing,
+        boolean burning,
+        boolean freezing,
+        int baseDamage
+    ) {
         this.name = name;
         this.poisoning = poisoning;
         this.sleeping = sleeping;
