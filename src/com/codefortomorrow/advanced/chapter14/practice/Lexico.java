@@ -13,9 +13,9 @@ title of the file which comes first lexicographically.
 Hint: Java’s String.compareTo method may be of use to you.
 */
 
-public class Lexico{
+public class Lexico {
 
-    public static void main(String[] args){
+    public static void main(String[] args) {
         // Add code here
     }
 }

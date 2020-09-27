@@ -13,15 +13,16 @@ title of the file which comes first lexicographically.
 Hint: Java’s String.compareTo method may be of use to you.
 */
 
-public class Lexico{
+public class Lexico {
 
-  public static void main(String[] args){
-    BufferedReader br = null;
-    BufferedReader br2 = null;
-    try{
-      br = new BufferedReader(new FileReader("f1.txt"));
-      br2 = new BufferedReader(new FileReader("f2.txt"));
+    public static void main(String[] args) {
+        BufferedReader br = null;
+        BufferedReader br2 = null;
+        try {
+            br = new BufferedReader(new FileReader("f1.txt"));
+            br2 = new BufferedReader(new FileReader("f2.txt"));
 
+<<<<<<< HEAD
       String line1 = br.readLine();
       String line2 = br2.readLine();
       int c = line1.compareTo(line2);
@@ -41,4 +42,21 @@ public class Lexico{
     br2.close();
   }
   }
+=======
+            String line1 = br.readLine();
+            String line2 = br2.readLine();
+            int c = line1.compareTo(line2);
+            while (c == 0) {
+                line1 = br.readLine();
+                line2 = br2.readLine();
+                c = line1.compareTo(line2);
+            }
+            if (c > 0) System.out.println("File 2"); else System.out.println(
+                "File 1"
+            );
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+>>>>>>> 7e8c2fe0ebe2b7a31da0266f78e9388b466656c3
 }
