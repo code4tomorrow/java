@@ -1,4 +1,4 @@
-package com.codefortomorrow.advanced.chapter14.examples
+package com.codefortomorrow.advanced.chapter14.examples;
 import java.io.*;
 
 public class FileIO {
@@ -7,7 +7,7 @@ public class FileIO {
         FileInputStream in = null;
         FileOutputStream out = null;
         File file = new File("names.txt");
-        
+
         try {
             in = new FileInputStream(file);
             out = new FileOutputStream("names_upper.txt");
