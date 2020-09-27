@@ -1,4 +1,5 @@
 package com.codefortomorrow.advanced.chapter14.practice;
+
 import java.io.*;
 
 /*
@@ -24,8 +25,8 @@ of writing over the existing content from the beginning.
 */
 
 public class Average {
-    public static void main(String[] args) {
 
+    public static void main(String[] args) {
         // Add code here.
     }
 }
