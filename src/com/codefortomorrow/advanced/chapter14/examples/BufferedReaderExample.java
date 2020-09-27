@@ -8,8 +8,8 @@ import java.io.IOException;
  * Source: https://beginnersbook.com/2014/01/how-to-read-file-in-java-using-bufferedreader/
  */
 public class BufferedReaderExample {
-    public static void main(String[] args) {
 
+    public static void main(String[] args) {
         BufferedReader br = null;
         BufferedReader br2 = null;
 
@@ -28,19 +28,14 @@ public class BufferedReaderExample {
 
             //Second way of reading the file
             System.out.println("Reading the file using read() method:");
-            int num=0;
+            int num = 0;
             char ch;
-            while((num=br2.read()) != -1)
-            {
-                ch=(char)num;
+            while ((num = br2.read()) != -1) {
+                ch = (char) num;
                 System.out.print(ch);
             }
-
-        }
-        catch (IOException ioe)
-        {
+        } catch (IOException ioe) {
             ioe.printStackTrace();
         }
     }
 }
-
