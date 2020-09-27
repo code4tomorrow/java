@@ -1,11 +1,11 @@
-package com.codefortomorrow.advanced.chapter14.examples
+package com.codefortomorrow.advanced.chapter14.examples;
 import java.io.*;
 
 public class TryWithResources {
 
     public static void main(String[] args) throws IOException {
         File file = new File("names.txt");
-        
+
         try (FileInputStream in = new FileInputStream(file);
             FileOutputStream out = new FileOutputStream("names_upper.txt")) {
 
