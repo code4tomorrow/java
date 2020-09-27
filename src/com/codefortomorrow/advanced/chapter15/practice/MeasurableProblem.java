@@ -1,4 +1,5 @@
 package com.codefortomorrow.advanced.chapter15.practice;
+
 /*
 Create a Measurable interface
 that is used to “measure” anything. Add necessary methods.
@@ -11,14 +12,17 @@ about the case if they are equal.
 
 Problem adapted from Java SE 9 Textbook
 */
-public class MeasurableProblem{
-  public static void main(String[] args){
-    //Add testing code
-  }
+public class MeasurableProblem {
+
+    public static void main(String[] args) {
+        //Add testing code
+    }
 }
-interface Measurable{
-  //add interface code here
+
+interface Measurable {
+    //add interface code here
 }
-class Student implements Measurable{
-  //Add student code here
+
+class Student implements Measurable {
+    //Add student code here
 }
