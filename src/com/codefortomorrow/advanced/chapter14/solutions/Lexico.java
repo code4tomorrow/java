@@ -36,6 +36,9 @@ public class Lexico{
         System.out.println("File 1");
   } catch(IOException e){
     e.printStackTrace();
+  } finally{
+    br.close();
+    br2.close();
   }
   }
 }
