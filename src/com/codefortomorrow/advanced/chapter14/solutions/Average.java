@@ -1,4 +1,5 @@
 package com.codefortomorrow.advanced.chapter14.solutions;
+
 import java.io.*;
 
 /*
@@ -24,14 +25,15 @@ of writing over the existing content from the beginning.
 */
 
 public class Average {
+
     public static void main(String[] args) {
         File file = new File("numbers.txt");
-        
-        // try with resources block, which closes streams automatically
-        try(BufferedReader in = new BufferedReader(
-            new FileReader(file)); BufferedWriter out = new BufferedWriter(
-            new FileWriter(file, true))) {
 
+        // try with resources block, which closes streams automatically
+        try (
+            BufferedReader in = new BufferedReader(new FileReader(file));
+            BufferedWriter out = new BufferedWriter(new FileWriter(file, true))
+        ) {
             // read the numbers (String input) and find average
             double average = 0;
             String contentLine = in.readLine();

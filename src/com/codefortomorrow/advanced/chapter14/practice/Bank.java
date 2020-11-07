@@ -27,11 +27,9 @@ where you have created instances of BankAccount.
 */
 
 public class Bank {
-    
-    public static void main(String[] args) {
 
+    public static void main(String[] args) {
         // Your code here.
     }
 }
-
 // Add other classes here.

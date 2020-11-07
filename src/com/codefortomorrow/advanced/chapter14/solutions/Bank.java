@@ -27,7 +27,7 @@ where you have created instances of BankAccount.
 */
 
 public class Bank {
-    
+
     public static void main(String[] args) {
         BankAccount account1 = new BankAccount(500);
         BankAccount account2 = new BankAccount(1000);
@@ -51,7 +51,6 @@ public class Bank {
     }
 }
 
-
 class BankAccount {
     private int balance;
 
@@ -64,9 +63,9 @@ class BankAccount {
     }
 
     public void withdraw(int amount) throws NotEnoughMoneyException {
-        if(amount > balance)
-            throw new NotEnoughMoneyException(
-                "Bank balance is short $" + Math.abs(balance - amount));
+        if (amount > balance) throw new NotEnoughMoneyException(
+            "Bank balance is short $" + Math.abs(balance - amount)
+        );
         balance -= amount;
     }
 
@@ -74,7 +73,6 @@ class BankAccount {
         return balance;
     }
 }
-
 
 class NotEnoughMoneyException extends Exception {
 
