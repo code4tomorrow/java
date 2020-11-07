@@ -1,5 +1,4 @@
 package com.codefortomorrow.advanced.chapter16.practice;
-
 /*
 Adding an insert method to a SinglyLinkedList
 (details in SinglyLinkedList DIY section). 

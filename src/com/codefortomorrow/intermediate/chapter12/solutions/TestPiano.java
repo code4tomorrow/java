@@ -38,6 +38,7 @@ public class TestPiano {
 }
 
 class Piano extends Instrument {
+
     private double hammerWeight;
     private String backPostMaterial;
 
@@ -72,6 +73,7 @@ class Piano extends Instrument {
 }
 
 class Instrument {
+
     private String name;
 
     public Instrument() {

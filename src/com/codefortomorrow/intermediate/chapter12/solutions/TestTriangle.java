@@ -44,6 +44,7 @@ public class TestTriangle {
 }
 
 class Triangle {
+
     private double side1;
     private double side2;
     private double side3;

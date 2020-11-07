@@ -17,6 +17,7 @@ public class TestPoint {
 }
 
 class Point {
+
     public double x;
     public double y;
 

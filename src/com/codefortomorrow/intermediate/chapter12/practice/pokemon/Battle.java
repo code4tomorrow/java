@@ -3,6 +3,7 @@ package com.codefortomorrow.intermediate.chapter12.practice.pokemon;
 import java.util.Scanner;
 
 public class Battle {
+
     private Scanner sc = new Scanner(System.in);
     private Pokemon pokemonOne;
     private Pokemon pokemonTwo;

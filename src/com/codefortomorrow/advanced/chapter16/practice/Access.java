@@ -1,5 +1,4 @@
 package com.codefortomorrow.advanced.chapter16.practice;
-
 /*
 Using the methods outlined in the “Benefits of LinkedLists” section,
 fill both a LinkedList and an ArrayList with 10,000 elements.

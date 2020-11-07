@@ -1,4 +1,5 @@
 package com.codefortomorrow.advanced.chapter16.solutions;
+
 import java.util.*;
 
 /*
@@ -36,77 +37,75 @@ System.out.println(lst);
 // definition.
 
 public class SinglyLinkedListInsert {
-  Node head;
 
-  // add() method from SinglyLinkedList DIY section, adds to end of list
-  public void add(int data) {
-    // Create a new node with given data 
-    Node new_node = new Node(data); 
+    Node head;
 
-    // If the Linked List is empty, 
-    // then make the new node as head 
-    if (head == null) { 
-        head = new_node; 
-    } 
-    else { 
-        // Else traverse till the last node 
-        // and insert the new_node there 
-        Node last = head; 
-        while (last.next != null) { 
-            last = last.next; 
-        } 
+    // add() method from SinglyLinkedList DIY section, adds to end of list
+    public void add(int data) {
+        // Create a new node with given data
+        Node new_node = new Node(data);
 
-        // Insert the new_node at last node 
-        last.next = new_node; 
-    } 
-  }
+        // If the Linked List is empty,
+        // then make the new node as head
+        if (head == null) {
+            head = new_node;
+        } else {
+            // Else traverse till the last node
+            // and insert the new_node there
+            Node last = head;
+            while (last.next != null) {
+                last = last.next;
+            }
 
-  public void insert(int data, int pos) {
-    // Verify valid pos number
-    if (pos < 0) 
-      System.out.print("Invalid position"); 
-
-    // Create new node and keep track of current node
-    Node new_node = new Node(data); 
-    Node current = head;
-
-    // If pos is 0, set new node as head
-    if (pos == 0) { 
-      new_node.next = head; 
-      head = new_node; 
-    } else { 
-      while (pos-- >= 0) { 
-        if (pos == 0) { 
-          // Add new node after current position
-          new_node.next = current.next;
-          current.next = new_node;
-          break; 
+            // Insert the new_node at last node
+            last.next = new_node;
         }
-        // Check if pos is out of bounds (reaches end)
-        if(current.next == null) {
-          System.out.println("Out of bounds");
-          break;
-        }
-        current = current.next; 
-      } 
-    } 
-  }
-
-  @Override
-  public String toString() {
-    // For empty lists
-    if(head == null)
-      return "{}";
-
-    String str = "{";
-    
-    // Traverse the list until the last node
-    Node current = head;
-    while(current.next != null) {
-      str += "" + current.data + ", ";
-      current = current.next;
     }
-    str += current.data + "}";
-    return str;
-  }
+
+    public void insert(int data, int pos) {
+        // Verify valid pos number
+        if (pos < 0) System.out.print("Invalid position");
+
+        // Create new node and keep track of current node
+        Node new_node = new Node(data);
+        Node current = head;
+
+        // If pos is 0, set new node as head
+        if (pos == 0) {
+            new_node.next = head;
+            head = new_node;
+        } else {
+            while (pos-- >= 0) {
+                if (pos == 0) {
+                    // Add new node after current position
+                    new_node.next = current.next;
+                    current.next = new_node;
+                    break;
+                }
+                // Check if pos is out of bounds (reaches end)
+                if (current.next == null) {
+                    System.out.println("Out of bounds");
+                    break;
+                }
+                current = current.next;
+            }
+        }
+    }
+
+    @Override
+    public String toString() {
+        // For empty lists
+        if (head == null) return "{}";
+
+        String str = "{";
+
+        // Traverse the list until the last node
+        Node current = head;
+        while (current.next != null) {
+            str += "" + current.data + ", ";
+            current = current.next;
+        }
+        str += current.data + "}";
+        return str;
+    }
 }

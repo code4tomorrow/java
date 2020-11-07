@@ -1,6 +1,7 @@
 package com.codefortomorrow.intermediate.chapter12.examples;
 
 public class Person {
+
     private String name;
     private int age;
     private String address;

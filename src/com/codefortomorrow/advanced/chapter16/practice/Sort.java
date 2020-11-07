@@ -1,5 +1,4 @@
 package com.codefortomorrow.advanced.chapter16.practice;
-
 /*
 Write a method which takes in a LinkedList of Strings
 and rearranges the elements (without creating a new list)

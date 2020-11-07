@@ -1,4 +1,5 @@
 package com.codefortomorrow.advanced.chapter16.solutions;
+
 import java.util.*;
 
 /*
@@ -19,24 +20,21 @@ public class Access {
 
         // Define lists with 10,000 elements.
         LinkedList<Integer> list1 = new LinkedList<Integer>();
-        for(int i = 0; i < 10000; i++)
-            list1.add(1);
+        for (int i = 0; i < 10000; i++) list1.add(1);
 
         ArrayList<Integer> list2 = new ArrayList<Integer>();
-        for(int i = 0; i < 10000; i++)
-            list2.add(1);
+        for (int i = 0; i < 10000; i++) list2.add(1);
 
         // Get time for each operation and output the difference.
         a = System.nanoTime();
         int c = list1.get(9999);
         b = System.nanoTime();
-        System.out.println("\nLinked: " + (b-a) + " ns");
+        System.out.println("\nLinked: " + (b - a) + " ns");
 
         a = System.nanoTime();
         int d = list2.get(9999);
         b = System.nanoTime();
-        System.out.println("ArrayList: " + (b-a) + " ns");
-
+        System.out.println("ArrayList: " + (b - a) + " ns");
         // Note that the ArrayList takes less time.
     }
 }

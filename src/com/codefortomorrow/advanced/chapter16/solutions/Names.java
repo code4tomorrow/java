@@ -1,4 +1,5 @@
 package com.codefortomorrow.advanced.chapter16.solutions;
+
 import java.util.*;
 
 /*
@@ -19,18 +20,19 @@ Output the new list.
 */
 
 public class Names {
+
     public static void main(String[] args) {
         LinkedList<String> list = new LinkedList<String>();
         Scanner sc = new Scanner(System.in);
-        for(int i = 0; i < 10; i++) {
-          System.out.print("Enter name " + (i+1) + ": ");
-          list.add(sc.nextLine());
+        for (int i = 0; i < 10; i++) {
+            System.out.print("Enter name " + (i + 1) + ": ");
+            list.add(sc.nextLine());
         }
         System.out.println(list);
 
-        for(int i = 0; i < list.size(); i++)
-          if(list.get(i).length() <= 5)
-                list.remove(i--);
+        for (int i = 0; i < list.size(); i++) if (
+            list.get(i).length() <= 5
+        ) list.remove(i--);
         System.out.println(list);
 
         list.add(0, "Apple");

@@ -1,5 +1,4 @@
 package com.codefortomorrow.advanced.chapter16.practice;
-
 /*
 Create a LinkedList of Strings, and ask the user to
 input 10 names one by one into the list.

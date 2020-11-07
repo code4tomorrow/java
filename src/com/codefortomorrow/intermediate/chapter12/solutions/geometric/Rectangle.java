@@ -62,6 +62,7 @@ comments for all of the methods.
  */
 
 public class Rectangle extends Shape {
+
     private double length;
     private double width;
 
