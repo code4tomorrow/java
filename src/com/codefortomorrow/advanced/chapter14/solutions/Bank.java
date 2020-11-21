@@ -52,6 +52,7 @@ public class Bank {
 }
 
 class BankAccount {
+
     private int balance;
 
     public BankAccount(int balance) {

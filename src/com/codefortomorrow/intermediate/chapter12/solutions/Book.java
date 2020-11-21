@@ -10,6 +10,7 @@ Bonus points if you write Javadoc comments for each of the methods!
  */
 
 public class Book {
+
     private String title;
     private String author;
     private String genre;

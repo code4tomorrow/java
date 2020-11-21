@@ -5,6 +5,7 @@ Create the Circle class given a UML diagram.
  */
 
 public class Circle {
+
     private double radius;
     private String color;
 

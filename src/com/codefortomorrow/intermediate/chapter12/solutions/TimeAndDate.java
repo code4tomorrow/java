@@ -47,6 +47,7 @@ public class TimeAndDate {
 }
 
 class MyTime {
+
     public int hours;
     public int minutes;
     public int seconds;
@@ -70,6 +71,7 @@ class MyTime {
 }
 
 class MyDate {
+
     public int month;
     public int day;
     public int year;
