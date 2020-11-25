@@ -4,6 +4,7 @@ package com.codefortomorrow.intermediate.chapter12.practice.pokemon;
  * represents a Pokemon object
  */
 public class Pokemon {
+
     private Move[] moveList;
     private int maxHP;
     private int currentHP;
