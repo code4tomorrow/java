@@ -12,6 +12,7 @@ is isolated. After the first element is returned, the stack of Es is restored as
  */
 
 class MyQueueV2<E> {
+
     Stack<E> stack;
 
     public MyQueueV2() {
@@ -23,14 +24,14 @@ class MyQueueV2<E> {
     }
 
     public E remove() throws NoSuchElementException {
-        if (empty())
-            throw new NoSuchElementException("no element in this queue left to remove");
+        if (empty()) throw new NoSuchElementException(
+            "no element in this queue left to remove"
+        );
         return removeHelper();
     }
 
     private E removeHelper() {
-        if (stack.size() == 1)
-            return stack.pop();
+        if (stack.size() == 1) return stack.pop();
         E e = stack.pop();
         E val = removeHelper();
         stack.push(e);
@@ -43,6 +44,7 @@ class MyQueueV2<E> {
 }
 
 public class MakeQueueWithOneStack {
+
     public static void main(String[] args) {
         MyQueueV2<Integer> myQueue = new MyQueueV2<>();
         myQueue.add(1);
@@ -59,8 +61,7 @@ public class MakeQueueWithOneStack {
         System.out.println(a); // 4
         try {
             a = myQueue.remove();
-        }
-        catch (NoSuchElementException e) {
+        } catch (NoSuchElementException e) {
             e.printStackTrace();
         }
         System.out.println("tests complete");

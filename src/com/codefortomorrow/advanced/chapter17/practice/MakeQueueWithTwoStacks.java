@@ -12,11 +12,9 @@ import java.util.NoSuchElementException;
 
 class MyQueue<E> {
 
-    public MyQueue() {
-    }
+    public MyQueue() {}
 
-    public void add(E e) {
-    }
+    public void add(E e) {}
 
     public E remove() throws NoSuchElementException {
         return null;
@@ -28,6 +26,7 @@ class MyQueue<E> {
 }
 
 public class MakeQueueWithTwoStacks {
+
     public static void main(String[] args) {
         MyQueue<Integer> myQueue = new MyQueue<>();
     }

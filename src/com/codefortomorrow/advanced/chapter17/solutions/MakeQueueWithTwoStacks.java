@@ -13,6 +13,7 @@ When the user adds into the MyQueue, the operation is instant. When the user rem
 3. return the top of stack2
  */
 class MyQueue<E> {
+
     Stack<E> stack1;
     Stack<E> stack2;
 
@@ -26,14 +27,12 @@ class MyQueue<E> {
     }
 
     public E remove() throws NoSuchElementException {
-        if (empty())
-            throw new NoSuchElementException("no element in this queue left to remove");
-        else if (stack2.empty()) {
-            while (!stack1.empty())
-                stack2.push(stack1.pop());
+        if (empty()) throw new NoSuchElementException(
+            "no element in this queue left to remove"
+        ); else if (stack2.empty()) {
+            while (!stack1.empty()) stack2.push(stack1.pop());
             return stack2.pop();
-        }
-        else {
+        } else {
             return stack2.pop();
         }
     }
@@ -44,6 +43,7 @@ class MyQueue<E> {
 }
 
 public class MakeQueueWithTwoStacks {
+
     public static void main(String[] args) {
         MyQueue<Integer> myQueue = new MyQueue<>();
         myQueue.add(1);
@@ -60,8 +60,7 @@ public class MakeQueueWithTwoStacks {
         System.out.println(a); // 4
         try {
             a = myQueue.remove();
-        }
-        catch (NoSuchElementException e) {
+        } catch (NoSuchElementException e) {
             e.printStackTrace();
         }
         System.out.println("tests complete");
