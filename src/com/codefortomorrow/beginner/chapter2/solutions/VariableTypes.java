@@ -1,4 +1,4 @@
-package com.codefortomorrow.beginner.chapter1.practice;
+package com.codefortomorrow.beginner.chapter2.practice;
 
 /**
  * @author ArmeetJatyani
