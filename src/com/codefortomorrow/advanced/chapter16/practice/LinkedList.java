@@ -3,7 +3,7 @@ package com.codefortomorrow.advanced.chapter16.practice;
 /**
  * @author ArmeetJatyani
  * March 2021
- * 
+ *
  * Implement a simple LinkedList
  * You will need to create a LinkedListNode class, which represents each item/node in the linked list
  * Required functionality...
@@ -16,11 +16,11 @@ package com.codefortomorrow.advanced.chapter16.practice;
  */
 
 public class LinkedList {
+
     public static void main(String[] args) {
         // write your code here
-        
-    }
 
+    }
 }
 
-class LinkedListNode
+class LinkedListNode {}

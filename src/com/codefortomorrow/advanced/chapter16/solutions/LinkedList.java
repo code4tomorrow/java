@@ -1,17 +1,17 @@
 package com.codefortomorrow.advanced.chapter16.solutions;
 
-// using Lombok for Getters and Setters
-import lombok.Setter;
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.Setter;
 // UUID to represent each node's unique ID
 import java.util.UUID;
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+// using Lombok for Getters and Setters
+import lombok.Setter;
+import lombok.Setter;
 
 /**
  * @author ArmeetJatyani
  * March 2021
- * 
+ *
  * Implement a simple LinkedList
  * You will need to create a LinkedListNode class, which represents each item/node in the linked list
  * Required functionality...
@@ -25,6 +25,7 @@ import java.util.UUID;
 
 @Setter
 public class LinkedList {
+
     private LinkedListNode head;
 
     /**
@@ -57,7 +58,7 @@ public class LinkedList {
      */
     public LinkedListNode tail() {
         LinkedListNode current = head;
-        if(current == null) return null;
+        if (current == null) return null;
 
         while (current.getNext() != null) {
             current = current.getNext();
@@ -107,22 +108,21 @@ public class LinkedList {
     public String toString() {
         String list = "[";
         LinkedListNode current = head;
-        if(current == null) return null;
+        if (current == null) return null;
         do {
             list += Integer.toString(current.getValue()) + ", ";
             current = current.getNext();
-        }
-        while (current != null);
+        } while (current != null);
 
         list = list.substring(0, list.length() - 2);
         return list + "]";
     }
-
 }
 
 @Getter
 @Setter
 class Node {
+
     private UUID ID;
     private int value;
 
@@ -135,10 +135,11 @@ class Node {
         return this.value;
     }
 }
- 
+
 @Getter
 @Setter
 class LinkedListNode extends Node {
+
     private LinkedListNode next;
 
     public LinkedListNode(int value, LinkedListNode next) {
@@ -150,4 +151,3 @@ class LinkedListNode extends Node {
         return this.next;
     }
 }
-
