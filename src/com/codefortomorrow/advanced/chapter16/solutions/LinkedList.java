@@ -122,37 +122,31 @@ public class LinkedList {
 
 @Getter
 @Setter
-class Node
-{
+class Node {
     private UUID ID;
     private int value;
 
-    public Node(int value)
-    {
+    public Node(int value) {
         this.ID = UUID.randomUUID();
         this.value = value;
     }
 
-    public int value()
-    {
+    public int value() {
         return this.value;
     }
 }
  
 @Getter
 @Setter
-class LinkedListNode extends Node
-{
+class LinkedListNode extends Node {
     private LinkedListNode next;
 
-    public LinkedListNode(int value, LinkedListNode next)
-    {
+    public LinkedListNode(int value, LinkedListNode next) {
         super(value);
         this.next = next;
     }
 
-    public LinkedListNode next()
-    {
+    public LinkedListNode next() {
         return this.next;
     }
 }
