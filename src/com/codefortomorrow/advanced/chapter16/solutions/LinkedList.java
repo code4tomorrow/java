@@ -4,7 +4,7 @@ package com.codefortomorrow.advanced.chapter16.solutions;
 import java.util.UUID;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
-// using Lombok for Getters and Setters
+// using Lombok for Getters and Setters (saves lines)
 import lombok.Setter;
 import lombok.Setter;
 
