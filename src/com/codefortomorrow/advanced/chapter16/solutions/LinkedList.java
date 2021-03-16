@@ -61,7 +61,7 @@ public class LinkedList {
         if (current == null) return null;
 
         while (current.getNext() != null) {
-            current = current.getNext();
+            current = current.next();
         }
 
         return current;
