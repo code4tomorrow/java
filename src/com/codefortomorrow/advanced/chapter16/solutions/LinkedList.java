@@ -53,7 +53,7 @@ public class LinkedList {
         LinkedListNode current = head;
         if (current == null) return null;
 
-        while (current.getNext() != null) {
+        while (current.next() != null) {
             current = current.next();
         }
 
@@ -68,7 +68,6 @@ public class LinkedList {
         if (tail == null) {
             head = new LinkedListNode(value, null);
         } else {
-
             tail.setNext(new LinkedListNode(value, null));
         }
     }
@@ -103,7 +102,7 @@ public class LinkedList {
         if (current == null) return null;
         do {
             list += Integer.toString(current.value()) + ", ";
-            current = current.getNext();
+            current = current.next();
         } while (current != null);
 
         // Remove trailing comma and space after last list element
@@ -138,5 +137,10 @@ class LinkedListNode extends Node {
 
     public LinkedListNode next() {
         return this.next;
+    }
+
+    public void setNext(LinkedListNode next) {
+        this.next = next;
+        return;
     }
 }
