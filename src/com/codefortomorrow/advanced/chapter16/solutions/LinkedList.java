@@ -110,7 +110,7 @@ public class LinkedList {
         LinkedListNode current = head;
         if (current == null) return null;
         do {
-            list += Integer.toString(current.getValue()) + ", ";
+            list += Integer.toString(current.value()) + ", ";
             current = current.getNext();
         } while (current != null);
 
