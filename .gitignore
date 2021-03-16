@@ -5,5 +5,3 @@
 c4t-java.iml
 .DS_Store
 
-# ignore prettier files
-.prettierrc.json

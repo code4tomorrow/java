@@ -2,11 +2,6 @@ package com.codefortomorrow.advanced.chapter16.solutions;
 
 // UUID to represent each node's unique ID
 import java.util.UUID;
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-// using Lombok for Getters and Setters (saves lines)
-import lombok.Setter;
-import lombok.Setter;
 
 /**
  * @author ArmeetJatyani
@@ -23,7 +18,6 @@ import lombok.Setter;
  * - toString(): return a String representation of the list
  */
 
-@Setter
 public class LinkedList {
 
     private LinkedListNode head;
@@ -37,7 +31,6 @@ public class LinkedList {
 
     /**
      * constructor with first value
-     * @param value
      */
     public LinkedList(int value) {
         // create first node
@@ -69,7 +62,6 @@ public class LinkedList {
 
     /**
      * add new element (node) to linked list
-     * @param value
      */
     public void add(int value) {
         LinkedListNode tail = tail();
@@ -119,8 +111,6 @@ public class LinkedList {
     }
 }
 
-@Getter
-@Setter
 class Node {
 
     private UUID ID;
@@ -136,8 +126,6 @@ class Node {
     }
 }
 
-@Getter
-@Setter
 class LinkedListNode extends Node {
 
     private LinkedListNode next;
