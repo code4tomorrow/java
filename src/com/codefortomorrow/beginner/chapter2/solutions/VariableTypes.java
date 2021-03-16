@@ -20,7 +20,7 @@ package com.codefortomorrow.beginner.chapter2.solutions;
         // define a double variable on line 21
         double decimal = 23.2352536d;
 
-        // define a boolean variable on line 24 (Hint: true/false) on line 24
+        // define a boolean variable on line 24 (Hint: true/false)
         double dogsOut = true;  // the dogs are out :)
 
         // define a character variable on line 27
