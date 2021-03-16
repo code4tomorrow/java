@@ -17,7 +17,7 @@ package com.codefortomorrow.beginner.chapter2.practice;
         // define an integer variable called numApples with value 24 (line 18)
 
         
-        // print out number of oranges, output: "I have 10 oranges." (line 21)
+        // print out number of oranges using variables, output: "I have 10 oranges." (line 21)
 
 
         // print out number of apples, output: "I have 24 apples." (line 24)
