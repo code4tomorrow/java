@@ -75,7 +75,7 @@ public class LinkedList {
         LinkedListNode tail = tail();
         if (tail == null) {
             head = new LinkedListNode(value, null);
-        }
+        } else {
 
         tail.setNext(new LinkedListNode(value, null));
     }
