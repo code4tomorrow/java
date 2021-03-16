@@ -20,7 +20,7 @@ package com.codefortomorrow.beginner.chapter2.solutions;
         // print out number of oranges using variables, output: "I have 10 oranges." (line 21)
         System.out.println("I have " + numOranges + " oranges.");
 
-        // print out number of apples, output: "I have 24 apples." (line 24)
+        // print out number of apples using variables, output: "I have 24 apples." (line 24)
         System.out.println("I have " + numApples + " apples.");
 
     }
