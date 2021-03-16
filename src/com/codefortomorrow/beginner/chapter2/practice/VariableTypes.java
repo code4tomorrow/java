@@ -20,7 +20,7 @@ package com.codefortomorrow.beginner.chapter2.practice;
         // define a double variable on line 21
 
 
-        // define a boolean variable on line 24 (Hint: true/false) on line 24
+        // define a boolean variable on line 24 (Hint: true/false)
 
 
         // define a character variable on line 27

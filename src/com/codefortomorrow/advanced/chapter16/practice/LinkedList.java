@@ -6,6 +6,7 @@ package com.codefortomorrow.advanced.chapter16.practice;
  *
  * Implement a simple LinkedList
  * You will need to create a LinkedListNode class, which represents each item/node in the linked list
+ * Assume that the elements in the linked list are all of type int
  * Required functionality...
  * - head(): get head of list
  * - tail(): get tail of list

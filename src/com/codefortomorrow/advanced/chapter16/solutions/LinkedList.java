@@ -54,7 +54,7 @@ public class LinkedList {
         if (current == null) return null;
 
         while (current.getNext() != null) {
-            current = current.getNext();
+            current = current.next();
         }
 
         return current;
@@ -67,10 +67,10 @@ public class LinkedList {
         LinkedListNode tail = tail();
         if (tail == null) {
             head = new LinkedListNode(value, null);
-            return;
-        }
+        } else {
 
-        tail.setNext(new LinkedListNode(value, null));
+            tail.setNext(new LinkedListNode(value, null));
+        }
     }
 
     /**
@@ -88,7 +88,7 @@ public class LinkedList {
      */
     public LinkedListNode pop() {
         LinkedListNode popped = head;
-        head = head.getNext();
+        head = head.next();
         return popped;
     }
 
@@ -102,10 +102,11 @@ public class LinkedList {
         LinkedListNode current = head;
         if (current == null) return null;
         do {
-            list += Integer.toString(current.getValue()) + ", ";
+            list += Integer.toString(current.value()) + ", ";
             current = current.getNext();
         } while (current != null);
 
+        // Remove trailing comma and space after last list element
         list = list.substring(0, list.length() - 2);
         return list + "]";
     }
