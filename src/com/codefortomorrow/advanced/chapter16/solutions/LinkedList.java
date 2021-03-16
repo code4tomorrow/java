@@ -96,7 +96,7 @@ public class LinkedList {
      */
     public LinkedListNode pop() {
         LinkedListNode popped = head;
-        head = head.getNext();
+        head = head.next();
         return popped;
     }
 
