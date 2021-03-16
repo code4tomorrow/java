@@ -114,6 +114,7 @@ public class LinkedList {
             current = current.getNext();
         } while (current != null);
 
+        // Remove trailing comma and space after last list element
         list = list.substring(0, list.length() - 2);
         return list + "]";
     }
