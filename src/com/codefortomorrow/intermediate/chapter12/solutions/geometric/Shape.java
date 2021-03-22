@@ -62,6 +62,7 @@ comments for all of the methods.
  */
 
 public class Shape {
+
     public double x; // x coordinate of center of the shape
     public double y; // y coordinate of center of the shape
 

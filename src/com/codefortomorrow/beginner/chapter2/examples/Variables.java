@@ -21,9 +21,11 @@ public class Variables {
 
 // scope
 class A {
+
     String message = "World";
 }
 
 class B {
+
     String word = "Java";
 }

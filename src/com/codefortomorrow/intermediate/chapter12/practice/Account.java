@@ -5,6 +5,7 @@ Create a UML diagram for the Account class.
  */
 
 public class Account {
+
     private String name;
     private long number;
     private double balance;

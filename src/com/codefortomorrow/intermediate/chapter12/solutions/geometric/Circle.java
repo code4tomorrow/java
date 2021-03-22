@@ -62,6 +62,7 @@ comments for all of the methods.
  */
 
 public class Circle extends Shape {
+
     private double radius;
 
     /** Constructs a default Circle with radius 0 */

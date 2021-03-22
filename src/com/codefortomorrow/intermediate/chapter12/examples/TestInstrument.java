@@ -15,6 +15,7 @@ public class TestInstrument {
 }
 
 class Instrument {
+
     private String name;
 
     public Instrument() {
@@ -36,6 +37,7 @@ class Instrument {
 }
 
 class Guitar extends Instrument {
+
     private String type;
     private String stringType;
 

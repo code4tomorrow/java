@@ -40,6 +40,7 @@ interface Measurable {
 }
 
 class Student implements Measurable {
+
     private double GPA;
     private String name;
 

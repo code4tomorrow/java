@@ -4,6 +4,7 @@ package com.codefortomorrow.intermediate.chapter12.solutions.pokemon;
  * represents a Pokemon's move
  */
 public class Move {
+
     private String name;
     private boolean poisoning;
     private boolean sleeping;
