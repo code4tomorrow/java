@@ -1,8 +1,5 @@
 package com.codefortomorrow.advanced.chapter16.solutions;
 
-// UUID to represent each node's unique ID
-import java.util.UUID;
-
 /**
  * @author ArmeetJatyani
  * March 2021
@@ -113,11 +110,9 @@ public class LinkedList {
 
 class Node {
 
-    private UUID ID;
     private int value;
 
     public Node(int value) {
-        this.ID = UUID.randomUUID();
         this.value = value;
     }
 

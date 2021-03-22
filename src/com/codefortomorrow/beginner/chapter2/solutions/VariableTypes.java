@@ -15,7 +15,7 @@ package com.codefortomorrow.beginner.chapter2.solutions;
         int age = 23;
         
         // define a float variable on line 18
-        float pi = 3.14f;
+        float decimal = 23.32544f;
         
         // define a double variable on line 21
         double decimal = 23.2352536d;
