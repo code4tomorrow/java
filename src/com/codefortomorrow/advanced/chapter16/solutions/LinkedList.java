@@ -6,6 +6,7 @@ package com.codefortomorrow.advanced.chapter16.solutions;
  *
  * Implement a simple LinkedList
  * You will need to create a LinkedListNode class, which represents each item/node in the linked list
+ * Assume that the elements in the linked list are all of type int
  * Required functionality...
  * - head(): get head of list
  * - tail(): get tail of list
@@ -28,6 +29,7 @@ public class LinkedList {
 
     /**
      * constructor with first value
+     * @param value  first element in the linked list
      */
     public LinkedList(int value) {
         // create first node
@@ -36,7 +38,7 @@ public class LinkedList {
 
     /**
      * get head of Linked List
-     * @return
+     * @return first element of the linked list
      */
     public LinkedListNode head() {
         return this.head;
@@ -44,7 +46,7 @@ public class LinkedList {
 
     /**
      * traverse and get tail of linked list
-     * @return
+     * @return last element of the linked list
      */
     public LinkedListNode tail() {
         LinkedListNode current = head;
@@ -59,6 +61,7 @@ public class LinkedList {
 
     /**
      * add new element (node) to linked list
+     * @param value  element to add to the end of the linked list
      */
     public void add(int value) {
         LinkedListNode tail = tail();
@@ -70,8 +73,7 @@ public class LinkedList {
     }
 
     /**
-     * push (add to head of linkedlist)
-     * @return
+     * push (add element to head of linkedlist)
      */
     public void push(int value) {
         LinkedListNode newHead = new LinkedListNode(value, head);
@@ -79,8 +81,8 @@ public class LinkedList {
     }
 
     /**
-     * pop (remove head of linkedlist)
-     * @return
+     * pop (remove and return head of linkedlist)
+     * @return the node that was removed
      */
     public LinkedListNode pop() {
         LinkedListNode popped = head;
@@ -89,8 +91,8 @@ public class LinkedList {
     }
 
     /**
-     * to String
-     * @return
+     * Returns a String version of the LinkedList
+     * @return a String version of the LinkedList
      */
     @Override
     public String toString() {
@@ -112,10 +114,18 @@ class Node {
 
     private int value;
 
+    /**
+     * Constructs a list node with the given value
+     * @param value  the value stored in this Node
+     */
     public Node(int value) {
         this.value = value;
     }
 
+    /**
+     * Returns the value of this Node
+     * @return the value of this Node
+     */
     public int value() {
         return this.value;
     }
@@ -125,15 +135,28 @@ class LinkedListNode extends Node {
 
     private LinkedListNode next;
 
+    /**
+     * Constructs a LinkedListNode
+     * @param value  the value stored in this node
+     * @param next  the next node
+     */
     public LinkedListNode(int value, LinkedListNode next) {
         super(value);
         this.next = next;
     }
 
+    /**
+     * Returns the next node
+     * @return the next node
+     */
     public LinkedListNode next() {
         return this.next;
     }
 
+    /**
+     * Sets the next node
+     * @param next  the next node
+     */
     public void setNext(LinkedListNode next) {
         this.next = next;
         return;
