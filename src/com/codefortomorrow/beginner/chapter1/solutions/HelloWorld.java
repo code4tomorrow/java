@@ -10,7 +10,7 @@ package com.codefortomorrow.beginner.chapter1.solutions;
  */
 
  // a class is an "object" where we will place all our code inside
- public class HelloWorld{
+ public class HelloWorld {
     // the main method (below) is the first thing that runs when your program is run
     public static void main(String[] args) {
         // write code here (replace the "" with "Hello World!")
