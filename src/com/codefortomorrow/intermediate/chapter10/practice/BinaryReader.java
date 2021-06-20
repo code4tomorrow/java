@@ -1,3 +1,5 @@
+package com.codefortomorrow.intermediate.chapter10.practice;
+
 /*
     Create a program called BinaryReader in which a 4 x 4
     array of booleans is created. Have the computer loop
