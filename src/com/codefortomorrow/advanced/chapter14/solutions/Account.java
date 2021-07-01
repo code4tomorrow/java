@@ -79,29 +79,24 @@ public class Account {
         }
     }
 
-    public static void createAccount(
-        String username,
-        int age,
-        String password,
-        String confirmPassword
-    )
+    public static void createAccount(String username, int age, String password, String confirmPassword)
         throws InvalidAgeException, InvalidPasswordException, InvalidUsernameException, PasswordMismatchException {
-        if (username.length() < 4 || username.length() > 10) {
-            throw new InvalidUsernameException();
-        }
+            if (username.length() < 4 || username.length() > 10) {
+                throw new InvalidUsernameException();
+            }
 
-        if (age < 18) {
-            throw new InvalidAgeException();
-        }
+            if (age < 18) {
+                throw new InvalidAgeException();
+            }
 
-        if (password.length() < 4 || password.length() > 10) {
-            throw new InvalidPasswordException();
-        }
+            if (password.length() < 4 || password.length() > 10) {
+                throw new InvalidPasswordException();
+            }
 
-        if (!password.equals(confirmPassword)) {
-            throw new PasswordMismatchException();
-        }
-    }
+            if (!password.equals(confirmPassword)) {
+                throw new PasswordMismatchException();
+            }
+      }
 }
 
 class InvalidUsernameException extends Exception {}
