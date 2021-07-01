@@ -1,6 +1,7 @@
 package com.codefortomorrow.advanced.chapter16.solutions;
 
-import java.util.*;
+import java.util.LinkedList;
+import java.util.ArrayList;
 
 /*
 Using the methods outlined in the “Benefits of LinkedLists” section,
@@ -15,6 +16,7 @@ to access the element at a given position of a list.
 
 public class Access {
 
+    @SuppressWarnings("unused")
     public static void main(String[] args) {
         long a, b;
 

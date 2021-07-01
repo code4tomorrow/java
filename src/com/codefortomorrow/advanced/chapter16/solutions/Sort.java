@@ -1,6 +1,7 @@
 package com.codefortomorrow.advanced.chapter16.solutions;
 
-import java.util.*;
+import java.util.LinkedList;
+import java.util.Arrays;
 
 /*
 Write a method which takes in a LinkedList of Strings
