@@ -1,6 +1,7 @@
 package com.codefortomorrow.beginner.chapter2.examples;
 
 public class Variables {
+
     @SuppressWarnings("unused")
     public static void main(String[] args) {
         String name; // declaration
