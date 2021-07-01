@@ -3,7 +3,7 @@ package com.codefortomorrow.advanced.chapter14.solutions;
 import java.util.Scanner;
 
 /*
-Create the following classes that simply extend the `Exception` class: 
+Create the following classes that simply extend the `Exception` class:
 
 - `InvalidUsernameException`
 - `InvalidPasswordException`
@@ -11,7 +11,7 @@ Create the following classes that simply extend the `Exception` class:
 - `PasswordMismatchException`
 
 In the `Account` class, code a method called `createAccount` that takes a `username`, `age`,
-`password`, and `confirmPassword` as parameters. 
+`password`, and `confirmPassword` as parameters.
 
 In `createAccount`, throw an:
 
@@ -53,39 +53,34 @@ public class Account {
 
         System.out.println("Welcome to Account Creation!");
         while (true) {
-            System.out.print("Enter username (4 to 10 characters): ");
-            String username = sc.next();
-            System.out.print("Enter age: ");
-            int age = sc.nextInt();
-            System.out.print("Enter password (4 to 10 characters): ");
-            String password = sc.next();
-            System.out.print("Confirm password (4 to 10 characters): ");
-            String confirmPassword = sc.next();
+          System.out.print("Enter username (4 to 10 characters): ");
+          String username = sc.next();
+          System.out.print("Enter age: ");
+          int age = sc.nextInt();
+          System.out.print("Enter password (4 to 10 characters): ");
+          String password = sc.next();
+          System.out.print("Confirm password (4 to 10 characters): ");
+          String confirmPassword = sc.next();
 
-            try {
-                createAccount(username, age, password, confirmPassword);
-                System.out.println("Account created successfully!");
-                sc.close();
-                break;
-            } catch (InvalidUsernameException e) {
-                System.out.println("Invalid username.");
-            } catch (InvalidPasswordException e) {
-                System.out.println("Invalid password.");
-            } catch (InvalidAgeException e) {
-                System.out.println("Must be 18 or older to create an account.");
-            } catch (PasswordMismatchException e) {
-                System.out.println("Passwords don't match!");
-            }
+          try {
+              createAccount(username, age, password, confirmPassword);
+              System.out.println("Account created successfully!");
+              sc.close();
+              break;
+          } catch (InvalidUsernameException e) {
+              System.out.println("Invalid username.");
+          } catch (InvalidPasswordException e) {
+              System.out.println("Invalid password.");
+          } catch (InvalidAgeException e) {
+              System.out.println("Must be 18 or older to create an account.");
+          } catch (PasswordMismatchException e) {
+              System.out.println("Passwords don't match!");
+          }
         }
     }
 
-    public static void createAccount(
-        String username,
-        int age,
-        String password,
-        String confirmPassword
-    )
-        throws InvalidAgeException, InvalidPasswordException, InvalidUsernameException, PasswordMismatchException {
+    public static void createAccount(String username, int age, String password, String confirmPassword)
+      throws InvalidAgeException, InvalidPasswordException, InvalidUsernameException, PasswordMismatchException {
         if (username.length() < 4 || username.length() > 10) {
             throw new InvalidUsernameException();
         }
@@ -101,7 +96,7 @@ public class Account {
         if (!password.equals(confirmPassword)) {
             throw new PasswordMismatchException();
         }
-    }
+      }
 }
 
 class InvalidUsernameException extends Exception {}
