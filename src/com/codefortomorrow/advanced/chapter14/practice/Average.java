@@ -1,6 +1,5 @@
 package com.codefortomorrow.advanced.chapter14.practice;
 
-import java.io.*;
 
 /*
 The file “numbers.txt” has 100 random numbers
