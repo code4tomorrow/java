@@ -1,32 +1,68 @@
 package com.codefortomorrow.intermediate.chapter10.solutions;
 
+import java.util.Scanner;
+
 /*
- * Adapted from Exercise 8.5,
- * Introduction to Java Programming (Comprehensive)
- * by Y. Daniel Liang, 10th ed.
- *
- * Create a program called AddMatrices which
- * adds two 3x3 matrices and prints the result.
- * The program should prompt the user to enter
- * data for 2 matrices and then displays those
- * 2 matrices and the sum matrix.
+ * Create a driver class called TestSelectionSort
+ * which prompts the user to enter the length of
+ * an array and the elements (doubles) in the array.
+ * Then, your program should use selection sort to
+ * sort the array in place, and then print the resulting array.
  *
  * Example output:
  *
- * Enter matrix1: 1 2 3 4 5 6 7 8 9
- * Enter matrix2: 0 2 4 1 4.5 2.2 1.1 4.3 5.2
- * The matrices are added as follows
- * 1.0 2.0 3.0     0.0 2.0 4.0     1.0 4.0 7.0
- * 4.0 5.0 6.0  +  1.0 4.5 2.2  =  5.0 9.5 8.2
- * 7.0 8.0 9.0     1.1 4.3 5.2     8.1 12.3 14.2
- *
- * Hint: You may need to use the Double.parseDouble("a string")
- * to convert the user input to doubles.
+ * Enter the length of the array: 5
+ * Enter the elements in the array: -1 236.3 2 6 0
+ * -1.0 0.0 2.0 6.0 236.3
  */
 
 public class TestSelectionSort {
 
     public static void main(String[] args) {
-        // write code here
+        // Prompt user for length of array
+        System.out.print("Enter the length of the array: ");
+        Scanner input = new Scanner(System.in);
+        int arrayLength = input.nextInt();
+
+        // Initialize array
+        double[] list = new double[arrayLength];
+
+        // Prompt user for elements of the array
+        System.out.print("Enter the elements in the array: ");
+        for (int i = 0; i < arrayLength; i++) {
+            list[i] = input.nextDouble();
+        }
+
+        // goes up to index list.length - 1
+        // because you don't need to check last element
+        // since it will be sorted already
+        for (int i = 0; i < list.length - 1; i++) {
+            double min = list[i];
+            int minIndex = i;
+
+            // find the current smallest element
+            for (int j = i + 1; j < list.length; j++) {
+                if (list[j] < min) {
+                    min = list[j];
+                    minIndex = j;
+                }
+            }
+
+            // swap it with whatever is in the
+            // first position of unsorted array if needed
+            if (minIndex != i) {
+                double temp = list[i];
+                list[i] = min;
+                list[minIndex] = temp;
+            }
+        }
+
+        // print the sorted array
+        for (double n : list) {
+            System.out.print(n + " ");
+        }
+        System.out.println(); // move cursor to next line
+
+        input.close();
     }
 }
