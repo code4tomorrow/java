@@ -13,7 +13,7 @@ package com.codefortomorrow.beginner.chapter3.practice;
  */
 
 public class FirstHalf {
-
+    @SuppressWarnings("unused")
     public static void main(String[] args) {
         String str1 = "WooHoo"; // should print "Woo"
         String str2 = "HelloThere"; // should print "Hello"
