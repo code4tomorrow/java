@@ -50,9 +50,13 @@ public class Account {
         // Write your code here
     }
 
-    public static void createAccount(String username, int age, String password, String confirmPassword) {
+    public static void createAccount(
+        String username,
+        int age,
+        String password,
+        String confirmPassword
+    ) {
         // Write your code here
     }
 }
-
 // Write exception classes here

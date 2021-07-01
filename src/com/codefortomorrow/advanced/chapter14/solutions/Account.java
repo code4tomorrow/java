@@ -97,7 +97,7 @@ public class Account {
         if (password.length() < 4 || password.length() > 10) {
             throw new InvalidPasswordException();
         }
-        
+
         if (!password.equals(confirmPassword)) {
             throw new PasswordMismatchException();
         }
@@ -105,6 +105,9 @@ public class Account {
 }
 
 class InvalidUsernameException extends Exception {}
+
 class InvalidPasswordException extends Exception {}
+
 class InvalidAgeException extends Exception {}
+
 class PasswordMismatchException extends Exception {}
