@@ -34,43 +34,44 @@ public class Bank {
 
         account1.deposit(200);
         withdraw(account1, 300);
-        System.out.println("Account 1: " + account1.getBalance());
+        System.out.printf("Account 1 Balance: $%.2f\n", account1.getBalance());
 
         account2.deposit(200);
         withdraw(account2, 1500);
-        System.out.println("Account 2: " + account2.getBalance());
+        System.out.printf("Account 2 Balance: $%.2f\n", account2.getBalance());
     }
 
-    public static void withdraw(BankAccount account, int amount) {
+    public static void withdraw(BankAccount account, double amount) {
         try {
             account.withdraw(amount);
         } catch (NotEnoughMoneyException e) {
-            int diff = Math.abs(amount - account.getBalance());
-            System.out.println(e.toString());
+            System.out.println(e.getMessage());
         }
     }
 }
 
 class BankAccount {
 
-    private int balance;
+    private double balance;
 
-    public BankAccount(int balance) {
+    public BankAccount(double balance) {
         this.balance = balance;
     }
 
-    public void deposit(int amount) {
-        balance += amount;
+    public void deposit(double amount) {
+        if (amount > 0) {
+            balance += amount;
+        }
     }
 
-    public void withdraw(int amount) throws NotEnoughMoneyException {
-        if (amount > balance) throw new NotEnoughMoneyException(
-            "Bank balance is short $" + Math.abs(balance - amount)
-        );
+    public void withdraw(double amount) throws NotEnoughMoneyException {
+        if (amount > balance) {
+            throw new NotEnoughMoneyException(String.format("Bank balance is short $%.2f", Math.abs(balance - amount)));
+        }
         balance -= amount;
     }
 
-    public int getBalance() {
+    public double getBalance() {
         return balance;
     }
 }
