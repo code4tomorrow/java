@@ -8,6 +8,7 @@ package com.codefortomorrow.beginner.chapter2.solutions;
  */
 
  public class VariableTypes {
+     @SuppressWarnings("unused")
     public static void main(String[] args) {
         // write your code here
         
@@ -18,16 +19,16 @@ package com.codefortomorrow.beginner.chapter2.solutions;
         float decimal = 23.32544f;
         
         // define a double variable on line 21
-        double decimal = 23.2352536d;
+        double number = 23.2352536;
 
         // define a boolean variable on line 24 (Hint: true/false)
-        double dogsOut = true;  // the dogs are out :)
+        boolean dogsOut = true;  // the dogs are out :)
 
         // define a character variable on line 27
         char letter = 'A';
 
         // define a string variable on line 30 
-        char name = "Jeff";
+        String name = "Jeff";
         
     }
  }
