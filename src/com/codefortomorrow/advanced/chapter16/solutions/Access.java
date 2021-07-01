@@ -1,7 +1,7 @@
 package com.codefortomorrow.advanced.chapter16.solutions;
 
-import java.util.LinkedList;
 import java.util.ArrayList;
+import java.util.LinkedList;
 
 /*
 Using the methods outlined in the “Benefits of LinkedLists” section,

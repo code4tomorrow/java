@@ -1,6 +1,5 @@
 package com.codefortomorrow.advanced.chapter14.practice;
 
-
 /*
 The file “numbers.txt” has 100 random numbers
 (one on each line). Use file i/o to find the

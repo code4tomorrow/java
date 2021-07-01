@@ -1,6 +1,5 @@
 package com.codefortomorrow.advanced.chapter14.practice;
 
-
 /*
 Practice: Use File I/O to compare two files lexicographically.
 Lexicographical order is very similar to alphabetical order,
