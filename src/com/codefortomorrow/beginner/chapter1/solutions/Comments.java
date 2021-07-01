@@ -3,16 +3,17 @@ package com.codefortomorrow.beginner.chapter1.solutions;
 /**
  * @author ArmeetJatyani
  * March 2021
- * 
- * You'll be writing your first ever comment today! 
- * What we'll go over: 
+ *
+ * You'll be writing your first ever comment today!
+ * What we'll go over:
  * - single line comments
  * - multi line comments
  */
 
- // a class is an "object" where we will place all our code inside
- public class Comments {
-     // the main method (below) is the first thing that runs when your program is run
+// a class is an "object" where we will place all our code inside
+public class Comments {
+
+    // the main method (below) is the first thing that runs when your program is run
     public static void main(String[] args) {
         // this is a single line comment, I can write anything here
         // single line comments aren't run by Java!
@@ -22,7 +23,7 @@ package com.codefortomorrow.beginner.chapter1.solutions;
          * this is a multi
          * line
          * comment
-         * 
+         *
          * It can span across multiple lines!
          */
 
@@ -31,8 +32,8 @@ package com.codefortomorrow.beginner.chapter1.solutions;
         // Hi my name is Armeet!
 
         /**
-         * I like teaching Java, and 
+         * I like teaching Java, and
          * good luck on your journey!
          */
     }
- }
+}
