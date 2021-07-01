@@ -66,12 +66,7 @@ class BankAccount {
 
     public void withdraw(double amount) throws NotEnoughMoneyException {
         if (amount > balance) {
-            throw new NotEnoughMoneyException(
-                String.format(
-                    "Bank balance is short $%.2f",
-                    Math.abs(balance - amount)
-                )
-            );
+            throw new NotEnoughMoneyException(String.format("Bank balance is short $%.2f", Math.abs(balance - amount)));
         }
         balance -= amount;
     }
