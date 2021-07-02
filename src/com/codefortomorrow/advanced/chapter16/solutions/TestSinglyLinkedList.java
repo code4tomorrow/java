@@ -22,14 +22,14 @@ package com.codefortomorrow.advanced.chapter16.solutions;
  * to prove the methods worked.)
  */
 
-public class TestLinkedList {
+public class TestSinglyLinkedList {
     public static void main(String[] args) {
         // test default constructor
-        LinkedList list = new LinkedList();
+        SinglyLinkedList list = new SinglyLinkedList();
         System.out.println("Empty linked list: " + list);
 
         // test 1 arg constructor
-        list = new LinkedList(10);
+        list = new SinglyLinkedList(10);
         System.out.println("Linked list with 1 element: " + list);
 
         // test add method
@@ -65,14 +65,14 @@ public class TestLinkedList {
     }
 }
 
-class LinkedList {
+class SinglyLinkedList {
 
     private LinkedListNode head;
 
     /**
      * default constructor
      */
-    public LinkedList() {
+    public SinglyLinkedList() {
         head = null;
     }
 
@@ -80,7 +80,7 @@ class LinkedList {
      * constructor with first value
      * @param value  first element in the linked list
      */
-    public LinkedList(int value) {
+    public SinglyLinkedList(int value) {
         // create first node
         head = new LinkedListNode(value, null);
     }

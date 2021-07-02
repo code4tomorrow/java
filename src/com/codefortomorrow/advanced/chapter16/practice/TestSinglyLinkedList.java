@@ -22,7 +22,7 @@ package com.codefortomorrow.advanced.chapter16.practice;
  * to prove the methods worked.)
  */
 
-public class TestLinkedList {
+public class TestSinglyLinkedList {
 
     public static void main(String[] args) {
         // write your code here
@@ -38,6 +38,6 @@ class LinkedListNode extends Node {
     // write your code here
 }
 
-class LinkedList {
+class SinglyLinkedList {
     // write your code here
 }
