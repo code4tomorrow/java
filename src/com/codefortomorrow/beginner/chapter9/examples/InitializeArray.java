@@ -2,6 +2,7 @@ package com.codefortomorrow.beginner.chapter9.examples;
 
 public class InitializeArray {
 
+    @SuppressWarnings("unused")
     public static void main(String[] args) {
         // declare an array - can be initialized later
         // with either of the initialization methods below

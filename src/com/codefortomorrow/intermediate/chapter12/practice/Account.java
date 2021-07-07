@@ -4,6 +4,7 @@ package com.codefortomorrow.intermediate.chapter12.practice;
 Create a UML diagram for the Account class.
  */
 
+@SuppressWarnings("unused")
 public class Account {
 
     private String name;

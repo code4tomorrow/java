@@ -14,6 +14,7 @@ package com.codefortomorrow.beginner.chapter3.solutions;
 
 public class Initialize {
 
+    @SuppressWarnings("unused")
     public static void main(String[] args) {
         boolean isRaining = false;
         double price = 5.68;

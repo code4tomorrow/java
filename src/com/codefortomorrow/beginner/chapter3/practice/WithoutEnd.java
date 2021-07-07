@@ -15,6 +15,7 @@ package com.codefortomorrow.beginner.chapter3.practice;
 
 public class WithoutEnd {
 
+    @SuppressWarnings("unused")
     public static void main(String[] args) {
         String str1 = "Hello"; // should print "ell"
         String str2 = "java"; // should print "av"
