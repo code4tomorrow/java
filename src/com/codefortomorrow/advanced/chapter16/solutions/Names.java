@@ -1,6 +1,7 @@
 package com.codefortomorrow.advanced.chapter16.solutions;
 
-import java.util.*;
+import java.util.LinkedList;
+import java.util.Scanner;
 
 /*
 Create a LinkedList of Strings, and ask the user to
@@ -38,5 +39,7 @@ public class Names {
         list.add(0, "Apple");
         list.add(list.size() - 1, "Peanut");
         System.out.println(list);
+
+        sc.close();
     }
 }
