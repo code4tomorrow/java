@@ -1,4 +1,4 @@
-package com.codefortomorrow.advanced.chapter13.practice;
+package com.codefortomorrow.advanced.chapter13.solutions;
 
 /*
 Implement the iterative code as a recursive
